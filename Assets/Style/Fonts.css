@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'INDIGO';
+    src: url('../Fonts/INDIGO-Regular.woff2') format('woff2'),
+        url('../Fonts/INDIGO-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../Fonts/ArialMT.woff2') format('woff2'),
+        url('../Fonts/ArialMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BPG Nino Medium Condenced';
+    src: url('../Fonts/BPGNinoMediumCondenced.woff2') format('woff2'),
+        url('../Fonts/BPGNinoMediumCondenced.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+

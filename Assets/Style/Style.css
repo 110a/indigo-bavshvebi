@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-size: 0;
+    background: url("../Images/bg.png") repeat;
+    overflow: hidden;
+}
+
+ul li{
+    display: inline-block;
+}
+
+#central-container{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+}
+
+#central-container img{
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+#text{
+    width: 100%;
+    height: 100%;
+}
+
+#central-container img.prev-arrow,
+#central-container img.text{
+    left: 0;
+}
+
+#central-container img.right{
+    right: 0;
+}
+
+.circle-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.circle{
+    width: 80px;
+    height: 80px;
+    border: 3px solid #AE2129;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.play{
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #AE2129;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-30%, -50%);
+    -moz-transform: translate(-30%, -50%);
+    -ms-transform: translate(-30%, -50%);
+    -o-transform: translate(-30%, -50%);
+    transform: translate(-30%, -50%);
+}
+
+
+.player-holder{
+    position: absolute;
+    bottom: 7vh;
+    padding-left: 5%;
+    display: inline-block;
+    width: 100%;
+    left: 0;
+}
+
+#audio-title{
+    position: absolute;
+    bottom: 34vh;
+    padding-left: 5%;
+}
+
+.time-counter{
+    font-family: Arial,sans-serif;
+    font-size: 1rem;
+    color: #333333;
+}
+
+.title{
+    font-family: "INDIGO",sans-serif;
+    display: inline-block;
+    font-size: 5.25rem;
+    color: #AB2424;
+}
+
+.counter{
+    display: inline-block;
+    font-family: "INDIGO", sans-serif;
+    font-size: 3.12500rem;
+    color: #727375;
+    vertical-align: middle;
+    width: 90px;
+}
+
+.currIndex{
+    color: #333333;
+}
+
+.progress{
+    display: inline-block;
+    cursor: pointer;
+    height: 4px;
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    background-color: #B3B3B3;
+    vertical-align: middle;
+    margin: 0 30px;
+}
+
+.progress span{
+    background-color: #333333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+}
+
+.controll-buttons{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.controll-buttons span{
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #727375;
+    -webkit-transition: color 500ms;
+    -moz-transition: color 500ms;
+    -ms-transition: color 500ms;
+    -o-transition: color 500ms;
+    transition: color 500ms;
+    background: transparent;
+}
+
+
+.prev-arrow {
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    height: 15px;
+    width: 15px;
+    transform: rotate(135deg);
+}
+
+
+.next-arrow {
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    height: 15px;
+    width: 15px;
+    transform: rotate(-45deg);
+}
+
+.play-button{
+    background: transparent;
+    border: none;
+    width: 30px;
+    text-align: center;
+}
+
+.play-button span{
+    display: inline-block;
+    width: 3px;
+    height: 24px;
+    background-color: #727375;
+    margin: 0 2px;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.button:hover{
+    color: #333333;
+}
+
+.rightSpan{
+    margin-left: 5px !important;
+}
+
+.play-button:hover span{
+    background-color: #333333;
+}
+
+.playerButtonLeft{
+    width: 0 !important;
+    height: 0 !important;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #333;
+    background-color: transparent !important;
+    color: transparent !important;
+}
+
+.playerButtonLeft:hover{
+    background-color: transparent;
+}
+
+.playerButtonRight{
+    width: 0 !important;
+}
+
+.sound-controll{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    position: relative;
+}
+
+.sound-controll .muteSound{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../Images/speaker.png") no-repeat center transparent;
+    background-size: 100%;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.muteSound .soundLine{
+    display: inline-block;
+    width: 2px;
+    height: 0;
+    background: #333333;
+    position: absolute;
+    top: -10px;
+    right: 17px;
+    transform: rotate(45deg);
+    -webkit-transition: height 250ms;
+    -moz-transition: height 250ms;
+    -ms-transition: height 250ms;
+    -o-transition: height 250ms;
+    transition: height 250ms;
+}
+
+
+input[type=range] {
+    -webkit-appearance: none;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -30px;
+    bottom: 75px;
+    cursor: pointer;
+    opacity: 0;
+    width: 0;
+    /*-webkit-transition: opacity 200ms;*/
+    /*-moz-transition: opacity 200ms;*/
+    /*-ms-transition: opacity 200ms;*/
+    /*-o-transition: opacity 200ms;*/
+    /*transition: opacity 200ms;*/
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 90px;
+    height: 5px;
+    background: #B3B3B3;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #333;
+    margin-top: -5px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #B3B3B3;
+}
+
+input[type=range]::-moz-range-track {
+    width: 90px;
+    height: 5px;
+    background: #B3B3B3;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #333;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 90px;
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #B3B3B3;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #333333;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #B3B3B3;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #B3B3B3;
+}

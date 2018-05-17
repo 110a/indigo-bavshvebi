@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="Assets/Style/Style.css">
+    <link rel="stylesheet" type="text/css" href="Assets/Style/Responsive.css">
+    <script src="Assets/Script/jquery-3.3.1.min.js"></script>
+    <script src="Assets/Script/jquery.lazylinepainter-1.7.0.min.js"></script>
+    <script src="Assets/Script/brushstroke.min.js"></script>
+</head>
+<body>
+    <div id="central-container">
+        <div id="text"></div>
+        <img class="left" src="Assets/Images/SVG/left-hand.svg">
+        <img class="right" src="Assets/Images/SVG/right-hand.svg">
+        <div class="circle-play">#text
+            <div class="circle">
+                <div class="arrow-triangle play">
+
+                </div>
+            </div>
+        </div>
+        <div id="audio-title">
+            <p class="title">ანა, ირინა, ელენე და სხვები</p>
+            <div class="time-counter">
+                <span class="current-time">00:00</span>
+                <span>/</span>
+                <span class="duration-time">00:00</span>
+            </div>
+        </div>
+    </div>
+    <div class="player-holder">
+        <div class="player">
+            <audio class="audio-player" src="Assets/Audio/AshboryBYU.mp3" >
+                <source id="1" src="Assets/Audio/AshboryBYU.mp3">
+                <source id="2" src="Assets/Audio/Harrison%20Craig%20Sings%20Can't%20Help%20Falling%20In%20Love_%20The%20Voice%20Australia%20Season%202.mp3">
+            </audio>
+        </div>
+        <div class="controllers">
+            <div class="counter">
+                <span class="currIndex"></span>
+                <span>/</span>
+                <span class="whole-number"></span>
+            </div>
+
+            <div class="progress">
+                <span></span>
+            </div>
+            <input type="range" class="seek" min="0" value="0" style="display: none">
+            <div class="controll-buttons">
+                <span class="prev-arrow button"></span>
+                <span class="play-button "><span class="leftSpan "></span><span class="rightSpan "></span></span>
+                <span class="next-arrow button"></span>
+            </div>
+            <label class="sound-controll">
+                <button class="muteSound"><div class="soundLine"></div></button >
+                <input type="range" class="sound" min="0" max="1" step="0.01">
+            </label>
+        </div>
+    </div>
+    <script src="Assets/Script/Main.js"></script>
+    <script src="Assets/Script/Player.js"></script>
+    <script src="Assets/Script/brushStroke.js"></script>
+</body>
+</html>
