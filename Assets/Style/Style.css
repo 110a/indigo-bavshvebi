@@ -126,7 +126,7 @@ ul li{
     font-size: 3.12500rem;
     color: #727375;
     vertical-align: middle;
-    width: 90px;
+    width: 130px;
 }
 
 .currIndex{
@@ -173,6 +173,9 @@ ul li{
     background: transparent;
 }
 
+.controllers{
+    text-align: left;
+}
 
 .prev-arrow {
     border-right: 3px solid;
@@ -204,11 +207,22 @@ ul li{
     height: 24px;
     background-color: #727375;
     margin: 0 2px;
-    -webkit-transition: all 500ms;
-    -moz-transition: all 500ms;
-    -ms-transition: all 500ms;
-    -o-transition: all 500ms;
-    transition: all 500ms;
+}
+
+.play-button .leftSpan{
+    -webkit-transition: width 500ms;
+    -moz-transition: width 500ms;
+    -ms-transition: width 500ms;
+    -o-transition: width 500ms;
+    transition: width 500ms;
+}
+
+.play-button .rightSpan{
+    -webkit-transition: width 500ms;
+    -moz-transition: width 500ms;
+    -ms-transition: width 500ms;
+    -o-transition: width 500ms;
+    transition: width 500ms;
 }
 
 .button:hover{
@@ -224,11 +238,16 @@ ul li{
 }
 
 .playerButtonLeft{
-    width: 0 !important;
-    height: 0 !important;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid #333;
+    border-bottom: 10px solid #333333;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    height: 0;
+    width: 20px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
     background-color: transparent !important;
     color: transparent !important;
 }
@@ -239,6 +258,12 @@ ul li{
 
 .playerButtonRight{
     width: 0 !important;
+    height: 0 !important;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #333;
+    background-color: transparent !important;
+    color: transparent !important;
 }
 
 .sound-controll{
@@ -373,4 +398,69 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
     background: #B3B3B3;
+}
+
+.controll-buttons span.left{
+    margin-right: 0!important;
+}
+
+.control{
+    width: 40px;
+    text-align: center;
+}
+
+.control,
+.control .left,
+.control .right,
+.control:before {
+    display: inline-block;
+    vertical-align: middle;
+    transition: border 0.4s, width 0.4s, height 0.4s, margin 0.4s;
+    transition-tiomig-function: cubic-bezier(1, 0, 0, 1);
+}
+.control:before {
+    content: "";
+    height: 112px;
+}
+.control.pause .left,
+.control.pause .right {
+    margin: 0 !important;
+    border-left: 5px solid #333;
+    border-top: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    height: 30px;
+}
+.control.pause .left {
+    border-right: 5px solid transparent;
+}
+.control.play-pause .left {
+    border-left: 11px solid #727375;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 0 solid transparent;
+    height: 14px;
+}
+.control.play-pause .right {
+    margin: 0;
+    border-left: 11px solid #727375;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    height: 0;
+}
+
+
+
+canvas{
+    position: absolute;
+    visibility: visible;
+    top: -79px;
+    left: -10%;
+    width: 125%;
+    height: 120%;
+}
+
+.brushStroke{
+    position: absolute;
+    top: 0;
+    left: 0;
 }

@@ -48,7 +48,9 @@ $('.audio-files ul li p').click(function () {
                audio.play();
            }
            currIndex=i;
-           $('.currIndex').html(currIndex+1);
+           if(currIndex<10){$('.currIndex').html(0+ (currIndex+1).toString());}
+           else{$('.currIndex').html(currIndex+1);}
+
        }
     }
 });
@@ -74,21 +76,15 @@ function currTiming() {
     $('.current-time').html(currMin + ":" + currSec);
 }
 
-$('.play-button').click(function () {
-    $('.play-button .rightSpan').toggleClass("playerButtonRight");
-    $('.play-button .leftSpan').toggleClass("playerButtonLeft");
-    if(audio.paused===true){
-        audio.play();
-        isPlaying = true;
-    }
-    else {
-        audio.pause();
-        isPlaying = false;
-    }
-    timing();
-
-});
-
+// $('.control').click(function () {
+//     $('.play-button .rightSpan').toggleClass("playerButtonRight");
+//     $('.play-button .leftSpan').toggleClass("playerButtonLeft");
+//
+// });
+// $('.control').on('click', function() {
+//     $(this).toggleClass('pause play-pause');
+//
+// });
 
 $(function indexing() {
     for(var i =0; i<audioArr.length; i++){
@@ -96,10 +92,10 @@ $(function indexing() {
             currIndex = i;
         }
     }
-    if(currIndex+1<10){$('.currIndex').html("0" + (currIndex+1))}
-    $('.currIndex').html(currIndex+1);
+    if(currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString())}
+    else {$('.currIndex').html(currIndex+1);}
     if(audioArr.length<10){$('.whole-number').html("0" + audioArr.length);}
-    $('.whole-number').html(audioArr.length);
+    else{$('.whole-number').html(audioArr.length);}
     timing();
 });
 
@@ -115,8 +111,8 @@ function  nextMusic() {
     else{
         audio.pause();
     }
-    if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1));}
-    $('.currIndex').html(currIndex+1);
+    if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
+    else {$('.currIndex').html(currIndex+1);}
 
 }
 
@@ -132,9 +128,9 @@ function prevMusic() {
     else{
         audio.pause();
     }
-    if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1));}
-    $('.currIndex').html(currIndex+1);
 
+    if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
+    else{$('.currIndex').html(currIndex+1);}
 }
 
 $(function changeAudio() {

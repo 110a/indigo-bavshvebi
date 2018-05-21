@@ -1,15 +1,14 @@
 $('.circle-play').click(function () {
-   var leftHand = $('.left');
+   var leftHand = $('.left-image');
    var positionLeft =0 - leftHand.width()/2;
-   var rightHand = $('.right');
+   var rightHand = $('.right-image');
    var positionRight =0 - rightHand.width()/2;
    var play = $(this);
    leftHand.animate({left:positionLeft, opacity:'0'}, "slow");
    rightHand.animate({right:positionRight, opacity:'0'},"slow");
    play.animate({opacity:'0'},"slow");
 
-    $('.play-button .rightSpan').toggleClass("playerButtonRight");
-    $('.play-button .leftSpan').toggleClass("playerButtonLeft");
+
     if(audio.paused===true){
         audio.play();
         isPlaying = true;
@@ -464,3 +463,25 @@ $('#text').lazylinepainter({
     'strokeColor' : '#344B76',
     'speedMultiplier' : 1/2
 }).lazylinepainter('paint');
+
+
+$('.control').on('mousedown', function() {
+    $(this).toggleClass('pause play-pause');
+    if(audio.paused===true){
+        audio.play();
+        isPlaying = true;
+    }
+    else {
+        audio.pause();
+        isPlaying = false;
+    }
+    timing();
+
+});
+
+$(document).on('keyup', function(e) {
+    if (e.which == 32) {
+        $('.control').toggleClass('pause play-pause');
+    }
+});
+
