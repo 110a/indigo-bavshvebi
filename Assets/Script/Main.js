@@ -1,12 +1,26 @@
 $('.circle-play').click(function () {
-   var leftHand = $('.left-image');
-   var positionLeft =0 - leftHand.width()/2;
-   var rightHand = $('.right-image');
-   var positionRight =0 - rightHand.width()/2;
-   var play = $(this);
-   leftHand.animate({left:positionLeft, opacity:'0'}, "slow");
-   rightHand.animate({right:positionRight, opacity:'0'},"slow");
-   play.animate({opacity:'0'},"slow");
+
+    // Options for customization
+    var options = {
+        duration: 1,
+        queue: true,
+        color: "#344B76",
+        size: 40,
+        inkAmount: 4,
+        root: '.brushStroke',
+        end: function () {
+            bs.erase();
+        }
+    };
+
+// Initialization
+    var bs = new Brushstroke(options);
+
+    bs.draw();
+    $('.brushStroke').css({width:"100%", height:"100%"});
+
+
+    $('.control').toggleClass('pause play-pause');
 
 
     if(audio.paused===true){
@@ -18,6 +32,18 @@ $('.circle-play').click(function () {
         isPlaying = false;
     }
     timing();
+
+    setTimeout(function () {
+       $('.controll-buttons').css({display:"inline-block"});
+       $('.progress').css({display:"inline-block"});
+       $('.sound-controll').css({display:"inline-block"});
+       $('.circle-play').css({display:"none"});
+    },1500);
+    
+    setTimeout(function () {
+        $('.brushStroke').css({width:"0", height:"0"});
+    },3000);
+
 
 });
 

@@ -65,6 +65,9 @@ function timing() {
     if(durrSec<10){durrSec = "0" + durrSec}
 
     $('.duration-time').html(durrMin + ":" + durrSec);
+    if($('.duration-time').html()==="NaN:NaN"){
+        $('.duration-time').html("00:00");
+    }
 };
 
 function currTiming() {
@@ -100,37 +103,89 @@ $(function indexing() {
 });
 
 function  nextMusic() {
-    currIndex ++;
-    if(currIndex +1 >audioArr.length){
-        currIndex = 0;
-    }
-    audio.src = audioArr[currIndex].src;
-    if(isPlaying == true){
-        audio.play();
-    }
-    else{
-        audio.pause();
-    }
-    if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
-    else {$('.currIndex').html(currIndex+1);}
+    // Options for customization
+    var options = {
+        duration: 1,
+        queue: true,
+        color: "#344B76",
+        size: 40,
+        inkAmount: 4,
+        root: '.brushStroke',
+        end: function () {
+            bs.erase();
+        }
+    };
 
+// Initialization
+    var bs = new Brushstroke(options);
+
+    bs.draw();
+    $('.brushStroke').css({width:"100%", height:"100%"});
+
+    setTimeout(function () {
+
+        currIndex ++;
+        if(currIndex +1 >audioArr.length){
+            currIndex = 0;
+        }
+        audio.src = audioArr[currIndex].src;
+        if(isPlaying == true){
+            audio.play();
+        }
+        else{
+            audio.pause();
+        }
+        if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
+        else {$('.currIndex').html(currIndex+1);}
+
+    },1500);
+
+    setTimeout(function () {
+        $('.brushStroke').css({width:"0", height:"0"});
+    },3000);
 }
 
 function prevMusic() {
-    currIndex --;
-    if(currIndex  < 0){
-        currIndex = audioArr.length-1;
-    }
-    audio.src = audioArr[currIndex].src;
-    if(isPlaying == true){
-        audio.play();
-    }
-    else{
-        audio.pause();
-    }
+    // Options for customization
+    var options = {
+        duration: 1,
+        queue: true,
+        color: "#344B76",
+        size: 40,
+        inkAmount: 4,
+        root: '.brushStroke',
+        end: function () {
+            bs.erase();
+        }
+    };
 
-    if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
-    else{$('.currIndex').html(currIndex+1);}
+// Initialization
+    var bs = new Brushstroke(options);
+
+    bs.draw();
+    $('.brushStroke').css({width:"100%", height:"100%"});
+
+    setTimeout(function () {
+        currIndex --;
+        if(currIndex  < 0){
+            currIndex = audioArr.length-1;
+        }
+        audio.src = audioArr[currIndex].src;
+        if(isPlaying == true){
+            audio.play();
+        }
+        else{
+            audio.pause();
+        }
+
+        if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
+        else{$('.currIndex').html(currIndex+1);}
+    },1500);
+
+    setTimeout(function () {
+        $('.brushStroke').css({width:"0", height:"0"});
+    },3000);
+
 }
 
 $(function changeAudio() {
