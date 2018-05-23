@@ -28,6 +28,24 @@ ul li{
     position: relative;
 }
 
+#central-container .ids{
+    opacity: 0;
+    -webkit-transition: opacity 100ms;
+    -moz-transition: opacity 100ms;
+    -ms-transition: opacity 100ms;
+    -o-transition: opacity 100ms;
+    transition: opacity 100ms;
+}
+
+#central-container .active-Id{
+    opacity: 1;
+    -webkit-transition: opacity 100ms;
+    -moz-transition: opacity 100ms;
+    -ms-transition: opacity 100ms;
+    -o-transition: opacity 100ms;
+    transition: opacity 100ms;
+}
+
 #central-container img{
     position: absolute;
     top: 0;

@@ -1,11 +1,11 @@
 var audio = $('.audio-player')[0];
-var currIndex, audioArr, isPlaying=false;
+var currIndex, audioArr, isPlaying=false, imageArr, currIMage;
 var wholeLength, currMin, currSec, durrMin, durrSec;
 audioArr = $('.audio-player source');
-
-var aText = new Array(
-    "პირობითი ტექსტი ამონარიდი სტატიიდან ილუსტაციების გასაფორმებლად\n"
-);
+imageArr = $('.ids');
+// var aText = new Array(
+//     "პირობითი ტექსტი ამონარიდი სტატიიდან ილუსტაციების გასაფორმებლად\n"
+// );
 // var iSpeed = 100; // time delay of print out
 // var iIndex = 0; // start printing array at this posision
 // var iArrLength = aText[0].length; // the length of the text array
@@ -103,32 +103,39 @@ $(function indexing() {
 });
 
 function  nextMusic() {
-    // Options for customization
+
     var options = {
         duration: 1,
         queue: true,
         color: "#344B76",
         size: 40,
-        inkAmount: 4,
+        inkAmount: 6,
         root: '.brushStroke',
         end: function () {
             bs.erase();
         }
     };
 
-// Initialization
+
     var bs = new Brushstroke(options);
 
     bs.draw();
     $('.brushStroke').css({width:"100%", height:"100%"});
 
-    setTimeout(function () {
+    // setTimeout(function () {
+    //     currIndex ++;
+    //     $('.ids').removeClass("active-Id");
+    //     $(imageArr[currIndex]).addClass("active-Id");
+    // },1000);
+    //
 
+    setTimeout(function () {
         currIndex ++;
         if(currIndex +1 >audioArr.length){
             currIndex = 0;
         }
         audio.src = audioArr[currIndex].src;
+
         if(isPlaying == true){
             audio.play();
         }
@@ -140,13 +147,15 @@ function  nextMusic() {
 
     },1500);
 
+
+
     setTimeout(function () {
         $('.brushStroke').css({width:"0", height:"0"});
     },3000);
 }
 
 function prevMusic() {
-    // Options for customization
+
     var options = {
         duration: 1,
         queue: true,
@@ -159,12 +168,18 @@ function prevMusic() {
         }
     };
 
-// Initialization
+
     var bs = new Brushstroke(options);
 
     bs.draw();
     $('.brushStroke').css({width:"100%", height:"100%"});
 
+    // setTimeout(function () {
+    //     currIndex --;
+    //     $('.ids').removeClass("active-Id");
+    //     $(imageArr[currIndex]).addClass("active-Id");
+    // },1000);
+    //
     setTimeout(function () {
         currIndex --;
         if(currIndex  < 0){
