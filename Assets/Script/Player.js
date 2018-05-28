@@ -122,15 +122,16 @@ function  nextMusic() {
     bs.draw();
     $('.brushStroke').css({width:"100%", height:"100%"});
 
-    // setTimeout(function () {
-    //     currIndex ++;
-    //     $('.ids').removeClass("active-Id");
-    //     $(imageArr[currIndex]).addClass("active-Id");
-    // },1000);
-    //
+    setTimeout(function () {
+        $('#text').css({display:"none"});
+        currIndex ++;
+        $('.ids').removeClass("active-Id");
+        $(imageArr[currIndex]).addClass("active-Id");
+    },1000);
+
 
     setTimeout(function () {
-        currIndex ++;
+        // currIndex ++;
         if(currIndex +1 >audioArr.length){
             currIndex = 0;
         }
@@ -174,14 +175,15 @@ function prevMusic() {
     bs.draw();
     $('.brushStroke').css({width:"100%", height:"100%"});
 
-    // setTimeout(function () {
-    //     currIndex --;
-    //     $('.ids').removeClass("active-Id");
-    //     $(imageArr[currIndex]).addClass("active-Id");
-    // },1000);
-    //
     setTimeout(function () {
+        $('#text').css({display:"none"});
         currIndex --;
+        $('.ids').removeClass("active-Id");
+        $(imageArr[currIndex]).addClass("active-Id");
+    },1000);
+
+    setTimeout(function () {
+        // currIndex --;
         if(currIndex  < 0){
             currIndex = audioArr.length-1;
         }
