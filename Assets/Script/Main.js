@@ -44,6 +44,18 @@ $('.circle-play').click(function () {
         $('.brushStroke').css({width:"0", height:"0"});
     },3000);
 
+    $(function indexing() {
+        for(var i =0; i<audioArr.length; i++){
+            if(audioArr[i].src==audio.src){
+                currIndex = i;
+            }
+        }
+        if(currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString())}
+        else {$('.currIndex').html(currIndex+1);}
+        if(audioArr.length<10){$('.whole-number').html("0" + audioArr.length);}
+        else{$('.whole-number').html(audioArr.length);}
+        timing();
+    });
 
 });
 
