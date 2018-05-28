@@ -1,8 +1,9 @@
 var audio = $('.audio-player')[0];
 var currIndex, audioArr, isPlaying=false, imageArr, currIMage;
-var wholeLength, currMin, currSec, durrMin, durrSec;
+var wholeLength, currMin, currSec, durrMin, durrSec , titles;
 audioArr = $('.audio-player source');
 imageArr = $('.ids');
+titles = $('.titles');
 // var aText = new Array(
 //     "პირობითი ტექსტი ამონარიდი სტატიიდან ილუსტაციების გასაფორმებლად\n"
 // );
@@ -123,6 +124,8 @@ function  nextMusic() {
         if(currIndex +1 >audioArr.length){
             currIndex = 0;
         }
+
+        $('.title').html($(titles[currIndex]).html());
         audio.src = audioArr[currIndex].src;
 
         if(isPlaying == true){

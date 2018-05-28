@@ -659,3 +659,10 @@ canvas{
     /*font-family: "INDIGO", sans-serif;*/
     /*color: #333333;*/
 /*}*/
+
+
+.subtitle{
+    font-family: "INDIGO", sans-serif !important;
+    font-size: 5rem !important;
+    color: #3B4960 !important;
+}

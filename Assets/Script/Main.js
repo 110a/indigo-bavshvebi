@@ -51,6 +51,9 @@ $('.circle-play').click(function () {
             else{$('.whole-number').html(audioArr.length);}
             timing();
         });
+
+       $('.title').addClass('subtitle');
+       $('.title').html("პირველი სათაური");
     },1500);
     
     setTimeout(function () {
