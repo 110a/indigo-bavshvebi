@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6073a5b9-8649-4388-bf05-7eed815042dc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="Player.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Script/Player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="127" column="41" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
+            <state relative-caret-position="632">
+              <caret line="187" column="54" selection-start-line="187" selection-start-column="54" selection-end-line="187" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -41,8 +40,8 @@
       <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+            <state relative-caret-position="544">
+              <caret line="47" column="84" lean-forward="true" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -50,8 +49,8 @@
       <file leaf-file-name="Style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Style/Style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+            <state relative-caret-position="717">
+              <caret line="666" column="30" selection-start-line="666" selection-start-column="30" selection-end-line="666" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -97,8 +96,8 @@
       <find>centra</find>
       <find>next</find>
       <find>png</find>
-      <find>ids</find>
       <find>play</find>
+      <find>ids</find>
       <find>nex</find>
       <find>currin</find>
     </findStrings>
@@ -131,9 +130,9 @@
         <option value="$PROJECT_DIR$/Assets/Style/st.less" />
         <option value="$PROJECT_DIR$/Assets/Script/brushStroke.js" />
         <option value="$PROJECT_DIR$/Index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Assets/Style/Style.css" />
         <option value="$PROJECT_DIR$/Assets/Script/Main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Assets/Script/Player.js" />
       </list>
     </option>
@@ -231,12 +230,12 @@
       <workItem from="1526880867953" duration="31498000" />
       <workItem from="1527074029357" duration="5738000" />
       <workItem from="1527484449060" duration="628000" />
-      <workItem from="1527487927043" duration="8636000" />
+      <workItem from="1527487927043" duration="8952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88746000" />
+    <option name="totallyTimeSpent" value="89062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -303,15 +302,8 @@
     <entry file="file://$PROJECT_DIR$/Assets/Style/Responsive.css" />
     <entry file="file://$PROJECT_DIR$/Assets/Style/Style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        <state relative-caret-position="717">
+          <caret line="666" column="30" selection-start-line="666" selection-start-column="30" selection-end-line="666" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -325,10 +317,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="47" column="84" lean-forward="true" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Script/Player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="127" column="41" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
+        <state relative-caret-position="632">
+          <caret line="187" column="54" selection-start-line="187" selection-start-column="54" selection-end-line="187" selection-end-column="54" />
         </state>
       </provider>
     </entry>

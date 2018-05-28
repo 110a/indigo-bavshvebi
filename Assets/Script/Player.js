@@ -185,7 +185,7 @@ function prevMusic() {
         else{
             audio.pause();
         }
-
+        $('.title').html($(titles[currIndex]).html());
         if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
         else{$('.currIndex').html(currIndex+1);}
     },1500);
