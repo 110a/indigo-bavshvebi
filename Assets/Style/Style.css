@@ -28,6 +28,20 @@ ul li{
     position: relative;
 }
 
+.mainId{
+    opacity: 1;
+    -webkit-transition: opacity 100ms;
+    -moz-transition: opacity 100ms;
+    -ms-transition: opacity 100ms;
+    -o-transition: opacity 100ms;
+    transition: opacity 100ms;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 #central-container .ids{
     opacity: 0;
     -webkit-transition: opacity 100ms;
@@ -49,6 +63,13 @@ ul li{
     -ms-transition: opacity 100ms;
     -o-transition: opacity 100ms;
     transition: opacity 100ms;
+}
+
+.Id1 img{
+    width: 73% !important;
+    height: 70% !important;
+    right: 5% !important;
+    top: 4% !important;
 }
 
 .Id2 img{
@@ -563,6 +584,7 @@ canvas{
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1000000000000000000;
 }
 
 
@@ -665,4 +687,109 @@ canvas{
     font-family: "INDIGO", sans-serif !important;
     font-size: 5rem !important;
     color: #3B4960 !important;
+}
+
+.sound-circles{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    top: -10px;
+    right: -50px;
+    overflow: hidden;
+}
+
+.sound-circles .level1{
+    width: 18px;
+    border-radius: 50%;
+    background: #333333;
+    display: inline-block;
+    height: 18px;
+    position: absolute;
+    left: -13px;
+    top: 16px;
+    z-index: 10000000;
+    cursor: pointer;
+}
+
+.sound-circles .inside-circle{
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+}
+
+.sound-circles .level1 .inside-circle{
+    width: 14px;
+    height: 14px;
+    right: 2px;
+    top: 2px;
+}
+
+.sound-circles .level2{
+    display: inline-block;
+    width: 8px;
+    height: 24px;
+    background: transparent;
+    top: 13px;
+    position: absolute;
+    overflow: hidden;
+    margin-left: 6px;
+    z-index: 100000;
+    cursor: pointer;
+}
+
+.sound-circles .level2 .outside-circle{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #333333;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sound-circles .level2 .outside-circle .inside-circle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    right: 2px;
+}
+
+.sound-circles .level3{
+    display: inline-block;
+    width: 11px;
+    height: 30px;
+    overflow: hidden;
+    top: 10px;
+    left: 6px;
+    position: absolute;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.sound-circles .level3 .outside-circle{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #727375;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sound-circles .levels .outside-circle:hover{
+    background: #333333;
+}
+
+.sound-circles .level3 .outside-circle .inside-circle{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #fff;
+    top: 2px;
+    right: 2px;
 }

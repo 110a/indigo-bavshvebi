@@ -34,6 +34,12 @@ $('.circle-play').click(function () {
     timing();
 
     setTimeout(function () {
+       $('.mainId').css({display:"none"});
+       $('#text').css({display:"none"});
+       $('.Id1').addClass("active-Id");
+    },1000);
+
+    setTimeout(function () {
        $('.controll-buttons').css({display:"inline-block"});
        $('.progress').css({display:"inline-block"});
        $('.sound-controll').css({display:"inline-block"});
