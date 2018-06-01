@@ -1,9 +1,11 @@
 var audio = $('.audio-player')[0];
 var currIndex, audioArr, isPlaying=false, imageArr, currIMage;
-var wholeLength, currMin, currSec, durrMin, durrSec , titles;
+var wholeLength, currMin, currSec, durrMin, durrSec , titles, soundcircles;
 audioArr = $('.audio-player source');
 imageArr = $('.ids');
 titles = $('.titles');
+soundcircles = $('.levels');
+audio.volume = 0.66;
 // var aText = new Array(
 //     "პირობითი ტექსტი ამონარიდი სტატიიდან ილუსტაციების გასაფორმებლად\n"
 // );
@@ -115,7 +117,14 @@ function  nextMusic() {
         $('#text').css({display:"none"});
         currIndex ++;
         $('.ids').removeClass("active-Id");
-        $(imageArr[currIndex]).addClass("active-Id");
+
+        if(currIndex==-1){
+            $(imageArr[9]).addClass("active-Id");
+        }
+        if(currIndex==10){
+            $(imageArr[0]).addClass("active-Id");
+        }
+        console.log(currIndex);
     },1000);
 
 
@@ -126,6 +135,7 @@ function  nextMusic() {
         }
 
         $('.title').html($(titles[currIndex]).html());
+        $(imageArr[currIndex]).addClass("active-Id");
         audio.src = audioArr[currIndex].src;
 
         if(isPlaying == true){
@@ -137,7 +147,7 @@ function  nextMusic() {
         if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
         else {$('.currIndex').html(currIndex+1);}
 
-    },1500);
+    },1000);
 
 
 
@@ -170,7 +180,6 @@ function prevMusic() {
         $('#text').css({display:"none"});
         currIndex --;
         $('.ids').removeClass("active-Id");
-        $(imageArr[currIndex]).addClass("active-Id");
     },1000);
 
     setTimeout(function () {
@@ -186,9 +195,10 @@ function prevMusic() {
             audio.pause();
         }
         $('.title').html($(titles[currIndex]).html());
+        $(imageArr[currIndex]).addClass("active-Id");
         if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
         else{$('.currIndex').html(currIndex+1);}
-    },1500);
+    },1000);
 
     setTimeout(function () {
         $('.brushStroke').css({width:"0", height:"0"});
@@ -242,11 +252,40 @@ $(function () {
             $('.muteSound .soundLine').css({height:"0"})
         }
    });
-   $('.sound').change(function () {
-        audio.volume = this.value;
-        lastVolume = this.value;
-        volumeController = 0;
+
+   $('.levels').click(function () {
+      if($(this).hasClass("level1")) {
+          audio.volume = 0.33;
+          lastVolume = 0.33;
+          volumeController = 0;
+          $(this).children('.outside-circle').css({background:"#333333"});
+          $('.level2 .outside-circle').css({background:"#727375"});
+          $('.level3 .outside-circle').css({background:"#727375"});
+      }
+      else if($(this).hasClass("level2")){
+          audio.volume=0.66;
+          lastVolume=0.66;
+          volumeController=0;
+          $(this).children('.outside-circle').css({background:"#333333"});
+          $('.level1 .outside-circle').css({background:"#333333"});
+          $('.level3 .outside-circle').css({background:"#727375"});
+      }
+      else if($(this).hasClass("level3")){
+          audio.volume=1;
+          lastVolume=1;
+          volumeController=0;
+          $('.level1 .outside-circle').css({background:"#333333"});
+          $('.level2 .outside-circle').css({background:"#333333"});
+          $('.level3 .outside-circle').css({background:"#333333"});
+      }
    });
+
+
+   // $('.sound').change(function () {
+   //      audio.volume = this.value;
+   //      lastVolume = this.value;
+   //      volumeController = 0;
+   // });
    $('.muteSound').mouseover(function () {
       $('.sound').css({opacity:"1", width:"90px"});
    });

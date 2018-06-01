@@ -34,6 +34,12 @@ $('.circle-play').click(function () {
     timing();
 
     setTimeout(function () {
+       $('.mainId').css({display:"none"});
+       $('#text').css({display:"none"});
+       $('.Id1').addClass("active-Id");
+    },1000);
+
+    setTimeout(function () {
        $('.controll-buttons').css({display:"inline-block"});
        $('.progress').css({display:"inline-block"});
        $('.sound-controll').css({display:"inline-block"});
@@ -497,7 +503,13 @@ var pathObj = {
 };
 
 
+$('.fb-share-button').mouseover(function () {
+    $('.share-text p').css({opacity:"1"});
+});
 
+$('.fb-share-button').mouseout(function () {
+    $('.share-text p').css({opacity:"0"});
+});
 
 
 $('#text').lazylinepainter({
