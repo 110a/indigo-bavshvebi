@@ -566,7 +566,7 @@ canvas{
 }
 
 
-.read-article{
+/* .read-article{
     display: inline-block;
     vertical-align: middle;
     position: absolute;
@@ -577,6 +577,11 @@ canvas{
     -ms-transform: translate(0,-50%);
     -o-transform: translate(0,-50%);
     transform: translate(0,-50%);
+} */
+.read-article{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
 }
 
 .read-article .arrow-right{
