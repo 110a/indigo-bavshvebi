@@ -136,7 +136,7 @@ ul li{
     top: 8% !important;
 }
 
-#central-container img{
+#central-container .mainId img{
     position: absolute;
     top: 0;
     display: inline-block;
@@ -627,22 +627,16 @@ canvas{
 }
 
 .extra-content{
-    display: inline-block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
     text-align: center;
 }
 
 .share-social{
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
-    position: relative;
-    margin-top: 90px;
-    height: 30px;
+    display: block;
+    margin-top: 45px;
+    width: 40px;
 }
 
 .share-social .fb-share-button{
@@ -650,19 +644,18 @@ canvas{
 }
 
 .share-social img{
-    width: 30px!important;
-    height: 30px!important;
-    transform: rotate(-90deg);
+    width: 35px;
+    height: 35px;
 }
 
 .playlist{
-    position: relative;
+/*     position: relative; */
 }
 
 .playlistButton{
     background: transparent;
     border: none;
-    width: 50%;
+/*     width: 50%; */
     cursor: pointer;
 }
 
@@ -670,6 +663,8 @@ canvas{
     display: inline-block;
     width: 40px;
     height: 5px;
+    display: block;
+    margin-bottom: 16px;
     background: #333333;
 }
 
