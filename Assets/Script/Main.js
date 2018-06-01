@@ -503,7 +503,13 @@ var pathObj = {
 };
 
 
+$('.fb-share-button').mouseover(function () {
+    $('.share-text p').css({opacity:"1"});
+});
 
+$('.fb-share-button').mouseout(function () {
+    $('.share-text p').css({opacity:"0"});
+});
 
 
 $('#text').lazylinepainter({
