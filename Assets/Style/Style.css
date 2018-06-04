@@ -637,6 +637,7 @@ canvas{
     display: block;
     margin-top: 45px;
     width: 40px;
+    position: relative;
 }
 
 .share-social .fb-share-button{
@@ -688,4 +689,115 @@ canvas{
     font-family: "INDIGO", sans-serif !important;
     font-size: 5rem !important;
     color: #3B4960 !important;
+}
+
+.fb-share-button{
+    display: inline-block !important;
+    position: absolute !important;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    left: 0;
+}
+
+.share-text{
+    display: inline-block;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -10px;
+    bottom: -50px;
+}
+
+.share-text p{
+    opacity: 0;
+    -webkit-transition: opacity 250ms ease-in-out;
+    -moz-transition: opacity 250ms ease-in-out;
+    -ms-transition: opacity 250ms ease-in-out;
+    -o-transition: opacity 250ms ease-in-out;
+    transition: opacity 250ms ease-in-out;
+    font-family: "INDIGO", sans-serif;
+    font-size: 23px;
+    color: #333333;
+}
+
+.sound-circles{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -10px;
+    margin-left: -3px;
+}
+
+.levels{
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.level1{
+    display: inline-block;
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    transform: rotate(5deg);
+    top: 12px;
+    left: 0;
+    z-index: 1000000;
+}
+
+.level1 .inside-circle{
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    border: 2px solid #727375;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.level2{
+    width: 7px;
+    height: 30px;
+    position: absolute;
+    top: 11px;
+    margin-left: 5px;
+    transform: rotate(1deg);
+    z-index: 100000;
+}
+
+.level2 .inside-circle{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #727375;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+}
+
+.level3{
+    display: inline-block;
+    width: 13px;
+    height: 33px;
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    transform: rotate(11deg);
+    z-index: 10000;
+}
+
+.level3 .inside-circle{
+    display: inline-block;
+    width: 30px;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    border: 2px solid #727375;
+    border-radius: 50%;
+}
+
+.levels:hover .inside-circle{
+    border: 2px solid #333333;
 }
