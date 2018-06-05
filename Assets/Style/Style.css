@@ -56,6 +56,10 @@ ul li{
     height: 100%;
 }
 
+.ids img{
+    position: absolute;
+}
+
 #central-container .active-Id{
     opacity: 1;
     -webkit-transition: opacity 100ms;
@@ -751,7 +755,7 @@ canvas{
     width: 26px;
     height: 26px;
     display: inline-block;
-    border: 2px solid #727375;
+    border: 2px solid #333333;
     border-radius: 50%;
     position: absolute;
     right: 0;
@@ -771,7 +775,7 @@ canvas{
     display: inline-block;
     width: 25px;
     height: 25px;
-    border: 2px solid #727375;
+    border: 2px solid #333333;
     position: absolute;
     right: 0;
     border-radius: 50%;
