@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6073a5b9-8649-4388-bf05-7eed815042dc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Style/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Style/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="345" column="39" selection-start-line="345" selection-start-column="29" selection-end-line="345" selection-end-column="39" />
+            <state relative-caret-position="346">
+              <caret line="402" column="39" selection-start-line="402" selection-start-column="33" selection-end-line="402" selection-end-column="39" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -31,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Player.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Script/Player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="268" column="29" selection-start-line="268" selection-start-column="29" selection-end-line="268" selection-end-column="29" />
+            <state relative-caret-position="323">
+              <caret line="256" column="51" selection-start-line="256" selection-start-column="51" selection-end-line="256" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -43,8 +42,8 @@
       <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="512" lean-forward="true" selection-start-line="512" selection-end-line="512" />
+            <state relative-caret-position="1176">
+              <caret line="541" selection-start-line="541" selection-end-line="541" />
               <folding>
                 <element signature="e#1807#21418#0" />
               </folding>
@@ -52,11 +51,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fonts.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Style/Fonts.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1411">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Style/Style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="785">
-              <caret line="817" column="1" lean-forward="true" selection-start-line="817" selection-start-column="1" selection-end-line="817" selection-end-column="1" />
+            <state relative-caret-position="-48">
+              <caret line="756" column="13" lean-forward="true" selection-start-line="756" selection-start-column="13" selection-end-line="756" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -76,9 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.left</find>
-      <find>.sound-controll</find>
-      <find>play-</find>
       <find>.player-holder</find>
       <find>play()</find>
       <find>.read-article</find>
@@ -97,15 +102,18 @@
       <find>Id</find>
       <find>active</find>
       <find>brush</find>
-      <find>sound</find>
       <find>audio.volume=</find>
       <find>audio.volume =</find>
       <find>.sound-circles</find>
       <find>.sound-circles .level1</find>
       <find>mutes</find>
       <find>mutesound</find>
-      <find>.share-social</find>
       <find>share</find>
+      <find>.share-social</find>
+      <find>Indigo</find>
+      <find>fb-share-button</find>
+      <find>.level1</find>
+      <find>sound</find>
     </findStrings>
     <replaceStrings>
       <replace>fill=&quot;#B12B2B&quot;</replace>
@@ -130,16 +138,16 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Style/ads" />
         <option value="$PROJECT_DIR$/Assets/Images/SVG/result1.svg" />
-        <option value="$PROJECT_DIR$/Assets/Style/Fonts.css" />
         <option value="$PROJECT_DIR$/Assets/Style/Responsive.css" />
         <option value="$PROJECT_DIR$/Assets/Style/PLay.sass" />
         <option value="$PROJECT_DIR$/Assets/Style/st.less" />
         <option value="$PROJECT_DIR$/Assets/Script/brushStroke.js" />
         <option value="$PROJECT_DIR$/Index.html" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player.js" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Assets/Style/Fonts.css" />
         <option value="$PROJECT_DIR$/Assets/Script/Main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Assets/Style/Style.css" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player.js" />
       </list>
     </option>
   </component>
@@ -175,12 +183,6 @@
               <item name="indigo-bavshvebi" type="b2602c69:ProjectViewProjectNode" />
               <item name="indigo-bavshvebi" type="462c0819:PsiDirectoryNode" />
               <item name="Assets" type="462c0819:PsiDirectoryNode" />
-              <item name="Script" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indigo-bavshvebi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indigo-bavshvebi" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets" type="462c0819:PsiDirectoryNode" />
               <item name="Style" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -203,6 +205,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\malkhaz.gelashvili\Documents\GitHub\indigo-bavshvebi\Assets\Fonts" />
       <recent name="C:\Users\malkhaz.gelashvili\Desktop\children\Assets\Images" />
       <recent name="C:\Users\malkhaz.gelashvili\Desktop\children\Assets\Script" />
     </key>
@@ -239,12 +242,13 @@
       <workItem from="1527487927043" duration="8952000" />
       <workItem from="1527577445166" duration="13508000" />
       <workItem from="1527847105663" duration="285000" />
-      <workItem from="1527849076054" duration="1044000" />
+      <workItem from="1527849076054" duration="2512000" />
+      <workItem from="1528092193971" duration="10724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103899000" />
+    <option name="totallyTimeSpent" value="116091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -276,7 +280,36 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Style/Fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Style/Style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11271">
+          <caret line="663" column="16" lean-forward="true" selection-start-line="663" selection-start-column="16" selection-end-line="663" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="12" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <folding>
+            <element signature="e#1807#21418#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6375">
@@ -402,40 +435,46 @@
     <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js" />
     <entry file="file://$PROJECT_DIR$/Assets/Style/Style.css" />
     <entry file="file://$PROJECT_DIR$/Assets/Style/ads" />
-    <entry file="file://$PROJECT_DIR$/Assets/Style/Fonts.css" />
     <entry file="file://$PROJECT_DIR$/Assets/Style/PLay.sass" />
     <entry file="file://$PROJECT_DIR$/Assets/Style/Responsive.css" />
-    <entry file="file://$PROJECT_DIR$/Assets/Script/Player.js">
+    <entry file="file://$PROJECT_DIR$/Assets/Style/Fonts.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="268" column="29" selection-start-line="268" selection-start-column="29" selection-end-line="268" selection-end-column="29" />
+        <state relative-caret-position="1411">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="512" lean-forward="true" selection-start-line="512" selection-end-line="512" />
+        <state relative-caret-position="1176">
+          <caret line="541" selection-start-line="541" selection-end-line="541" />
           <folding>
             <element signature="e#1807#21418#0" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Style/Style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="756" column="13" lean-forward="true" selection-start-line="756" selection-start-column="13" selection-end-line="756" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="345" column="39" selection-start-line="345" selection-start-column="29" selection-end-line="345" selection-end-column="39" />
+        <state relative-caret-position="346">
+          <caret line="402" column="39" selection-start-line="402" selection-start-column="33" selection-end-line="402" selection-end-column="39" />
           <folding>
             <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Style/Style.css">
+    <entry file="file://$PROJECT_DIR$/Assets/Script/Player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
-          <caret line="817" column="1" lean-forward="true" selection-start-line="817" selection-start-column="1" selection-end-line="817" selection-end-column="1" />
+        <state relative-caret-position="323">
+          <caret line="256" column="51" selection-start-line="256" selection-start-column="51" selection-end-line="256" selection-end-column="51" />
         </state>
       </provider>
     </entry>

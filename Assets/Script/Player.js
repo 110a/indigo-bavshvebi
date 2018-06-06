@@ -124,7 +124,6 @@ function  nextMusic() {
         if(currIndex==10){
             $(imageArr[0]).addClass("active-Id");
         }
-        console.log(currIndex);
     },1000);
 
 
@@ -244,39 +243,44 @@ $(function () {
             $('.sound').value = 0;
             volumeController = 1;
             $('.muteSound .soundLine').css({height:"55px"});
+            $('.levels .inside-circle').css({border:"2px solid #727375"});
         }
         else{
             audio.volume = lastVolume;
             $('.sound').value = lastVolume;
             volumeController = 0;
-            $('.muteSound .soundLine').css({height:"0"})
+            $('.muteSound .soundLine').css({height:"0"});
         }
    });
 
    $('.levels').click(function () {
+       $('.muteSound .soundLine').css({height:"0"});
       if($(this).hasClass("level1")) {
           audio.volume = 0.33;
           lastVolume = 0.33;
           volumeController = 0;
-          $(this).children('.outside-circle').css({background:"#333333"});
-          $('.level2 .outside-circle').css({background:"#727375"});
-          $('.level3 .outside-circle').css({background:"#727375"});
+          $(this).children('.inside-circle').css({border: "2px solid #333333"});
+          $('.level2 .inside-circle').css({border: "2px solid #727375"});
+          $('.level3 .inside-circle').css({border: "2px solid #727375"});
+          console.log(audio.volume);
       }
       else if($(this).hasClass("level2")){
           audio.volume=0.66;
           lastVolume=0.66;
           volumeController=0;
-          $(this).children('.outside-circle').css({background:"#333333"});
-          $('.level1 .outside-circle').css({background:"#333333"});
-          $('.level3 .outside-circle').css({background:"#727375"});
+          $(this).children('.inside-circle').css({border: "2px solid #333333"});
+          $('.level1 .inside-circle').css({border: "2px solid #333333"});
+          $('.level3 .inside-circle').css({border: "2px solid #727375"});
+          console.log(audio.volume);
       }
       else if($(this).hasClass("level3")){
           audio.volume=1;
           lastVolume=1;
           volumeController=0;
-          $('.level1 .outside-circle').css({background:"#333333"});
-          $('.level2 .outside-circle').css({background:"#333333"});
-          $('.level3 .outside-circle').css({background:"#333333"});
+          $('.level1 .inside-circle').css({border: "2px solid #333333"});
+          $('.level2 .inside-circle').css({border: "2px solid #333333"});
+          $('.level3 .inside-circle').css({border: "2px solid #333333"});
+          console.log(audio.volume);
       }
    });
 

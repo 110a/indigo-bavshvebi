@@ -19,6 +19,14 @@
     <script src="Assets/Script/segment.js"></script>
 </head>
 <body>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="fb-root"></div>
     <div id="central-container">
         <div id="text">
@@ -338,7 +346,7 @@
             </div>
             <div class="share-social">
                 <img src="Assets/Images/SVG/share-icon.svg">
-                <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"
+                <div class="fb-share-button" data-href="https://110a.github.io/indigo-bavshvebi/index.html" data-layout="button_count"
                      data-size="small" data-mobile-iframe="false"><a target="_blank"
                      href="https://110a.github.io/indigo-bavshvebi/"
                      class="fb-xfbml-parse-ignore">Share</a>
@@ -396,19 +404,13 @@
                         <span class="inside-circle"></span>
                     </span>
                     <span class="level2 levels">
-                        <span class="outside-circle">
-                            <span class="inside-circle"></span>
-                        </span>
+                        <span class="inside-circle"></span>
                     </span>
                     <span class="level3 levels">
-                        <span class="outside-circle">
-                            <span class="inside-circle"></span>
-                        </span>
+                        <span class="inside-circle"></span>
                     </span>
                     <span class="level4">
-                        <span class="outside-circle">
-                            <span class="inside-circle"></span>
-                        </span>
+                        <span class="inside-circle"></span>
                     </span>
                 </div>
             </label>
@@ -426,12 +428,5 @@
     <script src="Assets/Script/Main.js"></script>
     <script src="Assets/Script/Player.js"></script>
     <script src="Assets/Script/brushStroke.js"></script>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
