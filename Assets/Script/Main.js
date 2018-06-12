@@ -62,7 +62,7 @@ $('.circle-play').click(function () {
        $('.title').addClass('subtitle');
        $('.title').html("პირველი სათაური");
     },1500);
-    
+
     setTimeout(function () {
         $('.brushStroke').css({width:"0", height:"0"});
     },3000);
@@ -116,7 +116,7 @@ var pathObj = {
             "height": 1080
         }
     }
-}; 
+};
 
 
 
@@ -129,14 +129,14 @@ $('.fb-share-button').mouseout(function () {
 });
 
 
-$('#text').lazylinepainter({
-    'svgData' : pathObj,
-    'strokeWidth' : 4,
-    'strokeColor' : '#344B76',
-    'speedMultiplier' : 1/2,
-    'height':"10%",
-    'width':"80%"
-}).lazylinepainter('paint');
+// $('#text').lazylinepainter({
+//     'svgData' : pathObj,
+//     'strokeWidth' : 4,
+//     'strokeColor' : '#344B76',
+//     'speedMultiplier' : 1/2,
+//     'height':"10%",
+//     'width':"80%"
+// }).lazylinepainter('paint');
 
 
 $('.control').on('mousedown', function() {

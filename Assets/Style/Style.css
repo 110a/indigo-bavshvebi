@@ -140,12 +140,25 @@ ul li{
     top: 8% !important;
 }
 
-#central-container .mainId img{
+#central-container .mainId {
     position: absolute;
     top: 0;
-    display: inline-block;
-    height: 100%;
+/*     height: 100%; */
     width: 100%;
+}
+.left-image {
+    width: 28%;
+    height: auto;
+    top: 37%;
+    right: 16%;
+    position: absolute;
+}
+.right-image {
+    width: 18%;
+    height: auto;
+    left: 30%;
+    top: 30%;
+    position: absolute;
 }
 
 #text{
@@ -164,6 +177,7 @@ ul li{
 
 .circle-play{
     position: absolute;
+    /* visibility: hidden; */
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
@@ -824,4 +838,12 @@ canvas{
   0%   { transform: translate(0px, 0px) }
   50% { transform: translate(2px, 8px) }
   100% { transform: translate(0px, 0px) }
+}
+#my-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    /* z-index: 1000; */
+    transform: translate(-50%, -50%);
 }
