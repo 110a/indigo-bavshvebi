@@ -393,23 +393,19 @@ ul li{
 }
 
 .sound-controll{
-    display: none;
-    vertical-align: middle;
-    margin-left: 20px;
-    position: relative;
+    position: fixed;
+    top: 20px;
+    left: 5%;
 }
 
-.sound-controll {
+.sound-controll .muteSound{
     display: inline-block;
     width: 30px;
     height: 30px;
     background: url("../Images/speaker.png") no-repeat center transparent;
     background-size: 100%;
     border: none;
-    position: relative;
-    overflow: hidden;
     cursor: pointer;
-    position: fixed;
     top: 20px;
     left: 5%;
 }
@@ -608,6 +604,8 @@ canvas{
     -o-transform: translate(0,-50%);
     transform: translate(0,-50%);
 } */
+
+
 .read-article{
     position: absolute;
     right: 20px;
@@ -658,13 +656,13 @@ canvas{
 }
 
 .playlist{
-/*     position: relative; */
+    /*     position: relative; */
 }
 
 .playlistButton{
     background: transparent;
     border: none;
-/*     width: 50%; */
+    /*     width: 50%; */
     cursor: pointer;
 }
 
@@ -678,18 +676,18 @@ canvas{
 }
 
 /*.audio-files{*/
-    /*display: none;*/
-    /*position: absolute;*/
-    /*bottom: -36px;*/
-    /*right: 0;*/
-    /*width: 300px;*/
+/*display: none;*/
+/*position: absolute;*/
+/*bottom: -36px;*/
+/*right: 0;*/
+/*width: 300px;*/
 /*}*/
 
 /*.audio-files p{*/
-    /*cursor: pointer;*/
-    /*font-size: 20px;*/
-    /*font-family: "INDIGO", sans-serif;*/
-    /*color: #333333;*/
+/*cursor: pointer;*/
+/*font-size: 20px;*/
+/*font-family: "INDIGO", sans-serif;*/
+/*color: #333333;*/
 /*}*/
 
 
@@ -734,7 +732,8 @@ canvas{
     height: 50px;
     position: absolute;
     top: -10px;
-    margin-left: -3px;
+    left: 5%;
+    margin-left: 30px;
 }
 
 .levels{
