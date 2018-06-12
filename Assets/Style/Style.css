@@ -400,10 +400,10 @@ ul li{
 
 .sound-controll .muteSound{
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: url("../Images/speaker.png") no-repeat center transparent;
-    background-size: 100%;
+    width: 25px;
+    height: 35px;
+    background: url("../Images/SVG/sound-icon.svg") no-repeat center transparent;
+    /* background-size: 100%; */
     border: none;
     cursor: pointer;
     top: 20px;
