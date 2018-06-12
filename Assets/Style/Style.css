@@ -808,3 +808,20 @@ canvas{
 .levels:hover .inside-circle{
     border: 2px solid #333333;
 }
+
+.left-image {
+    animation: fontbulger 2s infinite;
+}
+@keyframes fontbulger {
+  0%   { transform: translate(0px, 0px) }
+  50% { transform: translate(5px, 5px) }
+  100% { transform: translate(0px, 0px) }
+}
+.right-image {
+    animation: second 2s infinite;
+}
+@keyframes second {
+  0%   { transform: translate(0px, 0px) }
+  50% { transform: translate(2px, 8px) }
+  100% { transform: translate(0px, 0px) }
+}

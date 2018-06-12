@@ -98,7 +98,7 @@ function  nextMusic() {
     var options = {
         duration: 1,
         queue: true,
-        color: "#ddd8d7",
+        color: "#e5dedc",
         size: 40,
         inkAmount: 6,
         root: '.brushStroke',
