@@ -42,6 +42,7 @@ $('.circle-play').click(function () {
     setTimeout(function () {
        $('.controll-buttons').css({display:"inline-block"});
        $('.progress').css({display:"inline-block"});
+       $('.time-counter').css({opacity:"1"});
        $('.sound-controll').css({display:"inline-block"});
        $('.circle-play').css({display:"none"});
 
