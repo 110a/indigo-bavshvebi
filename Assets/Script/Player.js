@@ -98,7 +98,7 @@ function  nextMusic() {
     var options = {
         duration: 1,
         queue: true,
-        color: "#344B76",
+        color: "#f5e8e5",
         size: 40,
         inkAmount: 6,
         root: '.brushStroke',
@@ -160,7 +160,7 @@ function prevMusic() {
     var options = {
         duration: 1,
         queue: true,
-        color: "#344B76",
+        color: "#f5e8e5",
         size: 40,
         inkAmount: 4,
         root: '.brushStroke',
