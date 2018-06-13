@@ -160,7 +160,7 @@ function prevMusic() {
     var options = {
         duration: 1,
         queue: true,
-        color: "#f5e8e5",
+        color: "#e5dedc",
         size: 40,
         inkAmount: 4,
         root: '.brushStroke',

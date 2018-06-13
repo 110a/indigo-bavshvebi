@@ -177,7 +177,8 @@ ul li{
 
 .circle-play{
     position: absolute;
-    /* visibility: hidden; */
+    cursor: default;
+    opacity: 0;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
@@ -185,6 +186,11 @@ ul li{
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
+    -webkit-transition: opacity 1000ms;
+    -moz-transition: opacity 1000ms;
+    -ms-transition: opacity 1000ms;
+    -o-transition: opacity 1000ms;
+    transition: opacity 1000ms;
 }
 
 .circle{
@@ -232,6 +238,12 @@ ul li{
     position: absolute;
     bottom: 34vh;
     padding-left: 5%;
+    z-index: 100000000000;
+    -webkit-transition: opacity 150ms;
+    -moz-transition: opacity 150ms;
+    -ms-transition: opacity 150ms;
+    -o-transition: opacity 150ms;
+    transition: opacity 150ms;
 }
 
 .time-counter{
@@ -246,6 +258,7 @@ ul li{
     display: inline-block;
     font-size: 5.25rem;
     color: #AB2424;
+    z-index: 100000;
 }
 
 .counter{
@@ -825,6 +838,7 @@ canvas{
 
 .left-image {
     animation: fontbulger 2s infinite;
+    animation-delay: 1s;
 }
 @keyframes fontbulger {
   0%   { transform: translate(0px, 0px) }

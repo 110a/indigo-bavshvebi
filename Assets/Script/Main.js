@@ -4,7 +4,7 @@ $('.circle-play').click(function () {
     var options = {
         duration: 1,
         queue: true,
-        color: "#f5e8e5",
+        color: "#e5dedc",
         size: 40,
         inkAmount: 4,
         root: '.brushStroke',
@@ -163,3 +163,17 @@ $(document).on('keyup', function(e) {
 // $('.fb_iframe_widget').mouseout(function () {
 //     $('.fb-share-button').css({opacity:"0!important"});
 // });
+
+
+$( document ).ready(function() {
+
+    var callback = function () {
+        $('.circle-play').css({opacity:"1", cursor:"pointer"});
+    };
+
+    var x = new Vivus('my-svg',
+        {
+            type: 'oneByOne',
+            duration: 800
+        }, callback);
+});
