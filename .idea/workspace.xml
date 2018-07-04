@@ -3,9 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="6073a5b9-8649-4388-bf05-7eed815042dc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/მეათე სათაური.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/მეექვსე სათაური.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/მეოთხე სათაური.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/მეორე სათაური.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/მერვე სათაური.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/მესამე სათაური.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/მეშვიდე სათაური.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/მეცხრე სათაური.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/მეხუთე სათაური.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/პირველი სათაური.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Style/Fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Style/Fonts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Style/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Style/Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -24,17 +33,26 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="369" column="13" lean-forward="true" selection-start-line="369" selection-start-column="13" selection-end-line="369" selection-end-column="13" />
+            <state relative-caret-position="346">
+              <caret line="219" column="45" lean-forward="true" selection-start-line="219" selection-start-column="45" selection-end-line="219" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Fonts.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Style/Fonts.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Script/Player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="162" column="23" selection-start-line="162" selection-start-column="23" selection-end-line="162" selection-end-column="23" />
+            <state relative-caret-position="530">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -42,17 +60,17 @@
       <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+            <state relative-caret-position="632">
+              <caret line="175" column="14" selection-start-line="175" selection-start-column="14" selection-end-line="175" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Style/Style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="841" column="23" selection-start-line="841" selection-start-column="23" selection-end-line="841" selection-end-column="23" />
+            <state relative-caret-position="593">
+              <caret line="719" column="16" selection-start-line="719" selection-start-column="16" selection-end-line="719" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -72,14 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>png</find>
-      <find>play</find>
-      <find>ids</find>
-      <find>nex</find>
-      <find>currin</find>
-      <find>Id</find>
-      <find>active</find>
-      <find>brush</find>
       <find>audio.volume=</find>
       <find />
       <find>.sound-circles</find>
@@ -102,6 +112,14 @@
       <find>.circ</find>
       <find>audio-ti</find>
       <find>title</find>
+      <find>.share-social .fb-share-button</find>
+      <find>.audio</find>
+      <find>პირველი</find>
+      <find>playlis</find>
+      <find>name</find>
+      <find>.src</find>
+      <find>ul li</find>
+      <find>next</find>
     </findStrings>
     <replaceStrings>
       <replace>fill=&quot;#B12B2B&quot;</replace>
@@ -131,11 +149,11 @@
         <option value="$PROJECT_DIR$/Assets/Style/st.less" />
         <option value="$PROJECT_DIR$/Assets/Script/brushStroke.js" />
         <option value="$PROJECT_DIR$/Index.html" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Assets/Style/Fonts.css" />
         <option value="$PROJECT_DIR$/Assets/Script/Main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Assets/Style/Style.css" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player.js" />
       </list>
     </option>
   </component>
@@ -172,7 +190,7 @@
               <item name="indigo-bavshvebi" type="b2602c69:ProjectViewProjectNode" />
               <item name="indigo-bavshvebi" type="462c0819:PsiDirectoryNode" />
               <item name="Assets" type="462c0819:PsiDirectoryNode" />
-              <item name="Style" type="462c0819:PsiDirectoryNode" />
+              <item name="Audio" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -235,11 +253,14 @@
       <workItem from="1528193304038" duration="1361000" />
       <workItem from="1528696415721" duration="907000" />
       <workItem from="1528790968948" duration="5857000" />
+      <workItem from="1529390243717" duration="1900000" />
+      <workItem from="1529577705821" duration="1212000" />
+      <workItem from="1530693274987" duration="4150000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124216000" />
+    <option name="totallyTimeSpent" value="131478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -415,36 +436,36 @@
     <entry file="file://$PROJECT_DIR$/Assets/Style/Responsive.css" />
     <entry file="file://$PROJECT_DIR$/Assets/Style/Fonts.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="53" column="50" lean-forward="true" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="369" column="13" lean-forward="true" selection-start-line="369" selection-start-column="13" selection-end-line="369" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/Player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="162" column="23" selection-start-line="162" selection-start-column="23" selection-end-line="162" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        <state relative-caret-position="442">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Style/Style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="841" column="23" selection-start-line="841" selection-start-column="23" selection-end-line="841" selection-end-column="23" />
+        <state relative-caret-position="593">
+          <caret line="719" column="16" selection-start-line="719" selection-start-column="16" selection-end-line="719" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="219" column="45" lean-forward="true" selection-start-line="219" selection-start-column="45" selection-end-line="219" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="175" column="14" selection-start-line="175" selection-start-column="14" selection-end-line="175" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>

@@ -118,7 +118,9 @@ var pathObj = {
     }
 };
 
-
+$('.fb-share-button').click(function () {
+   console.log(1);
+});
 
 $('.fb-share-button').mouseover(function () {
     $('.share-text p').css({opacity:"1"});

@@ -24,16 +24,16 @@ $('.sound').value = 0;
 
 function playList() {
     var quantity = audioArr.length;
-    var name, lastSlash, extension;
+    // var name, lastSlash, extension;
     for (let i=0; i< quantity; i++){
-        name = audioArr[i].src;
-        lastSlash = name.indexOf("Audio/")+"Audio/".length;
-        extension = name.indexOf(".mp3");
-        name = name.substring(lastSlash, extension);
-        for(var j =0; j<name.length; j++) {
-            name = name.replace("%20", " ");
-        }
-        $('.audio-files ul').append("<li><p data-src='"+audioArr[i].src+"'>"+name+"</p></li>");
+        // name = audioArr[i].src;
+        // lastSlash = name.indexOf("Audio/")+"Audio/".length;
+        // extension = name.indexOf(".mp3");
+        // name = name.substring(lastSlash, extension);
+        // for(var j =0; j<name.length; j++) {
+        //     name = name.replace("%20", " ");
+        // }
+        $('.audio-files ul').append("<li><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+"</p></li>");
     }
 }
 
@@ -44,18 +44,42 @@ $('.playlistButton').click(function () {
 });
 
 $('.audio-files ul li p').click(function () {
-   for(var i = 0; i<audioArr.length; i++){
-       if((audioArr[i].src).includes($(this).attr("data-src"))){
-           audio.src=audioArr[i].src;
-           if(isPlaying==true){
-               audio.play();
-           }
-           currIndex=i;
-           if(currIndex<10){$('.currIndex').html(0+ (currIndex+1).toString());}
-           else{$('.currIndex').html(currIndex+1);}
 
-       }
+    var options = {
+        duration: 1,
+        queue: true,
+        color: "#e5dedc",
+        size: 40,
+        inkAmount: 6,
+        root: '.brushStroke',
+        end: function () {
+            bs.erase();
+        }
+    };
+
+
+    var bs = new Brushstroke(options);
+
+    bs.draw();
+    $('.brushStroke').css({width:"100%", height:"100%"});
+
+    for(var i = 0; i<audioArr.length; i++){
+        if((audioArr[i].src).includes($(this).attr("data-src"))){
+            audio.src=audioArr[i].src;
+            if(isPlaying==true){
+                audio.play();
+            }
+            currIndex=i;
+            if(currIndex<10){$('.currIndex').html(0+ (currIndex+1).toString());}
+            else{$('.currIndex').html(currIndex+1);}
+
+        }
     }
+
+    setTimeout(function () {
+        $('.brushStroke').css({width:"0", height:"0"});
+    },3000);
+
 });
 
 
