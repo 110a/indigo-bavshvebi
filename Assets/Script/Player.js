@@ -57,7 +57,6 @@ $('.audio-files ul li p').click(function () {
         }
     };
 
-
     var bs = new Brushstroke(options);
 
     bs.draw();
@@ -70,11 +69,14 @@ $('.audio-files ul li p').click(function () {
                 audio.play();
             }
             currIndex=i;
-            if(currIndex<10){$('.currIndex').html(0+ (currIndex+1).toString());}
+            if(currIndex +1<10){$('.currIndex').html(0+ (currIndex+1).toString());}
             else{$('.currIndex').html(currIndex+1);}
-
         }
     }
+    var currTitle = $(this).html();
+    setTimeout(function () {
+        $('.title').html(currTitle)
+    },1500);
 
     setTimeout(function () {
         $('.brushStroke').css({width:"0", height:"0"});

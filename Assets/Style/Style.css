@@ -707,10 +707,11 @@ canvas{
     position: absolute;
     right: 0;
     text-align: left;
-    background: rgba(245, 255, 236, 0.84);
+    background: #3B4960;
     z-index: 100;
     overflow: hidden;
     display: none;
+    padding: 20px;
 }
 
 .audio-files ul li{
@@ -724,7 +725,7 @@ canvas{
     cursor: pointer;
     font-size: 20px;
     font-family: "INDIGO", sans-serif;
-    color: #333333;
+    color: #ffffff;
 }
 
 
