@@ -259,6 +259,12 @@ ul li{
     font-size: 5.25rem;
     color: #AB2424;
     z-index: 100000;
+    opacity: 1;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
 }
 
 .counter{

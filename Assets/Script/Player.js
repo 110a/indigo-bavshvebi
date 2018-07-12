@@ -121,23 +121,25 @@ function currTiming() {
 
 function  nextMusic() {
 
-    var options = {
-        duration: 1,
-        queue: true,
-        color: "#e5dedc",
-        size: 40,
-        inkAmount: 6,
-        root: '.brushStroke',
-        end: function () {
-            bs.erase();
-        }
-    };
-
-
-    var bs = new Brushstroke(options);
-
-    bs.draw();
-    $('.brushStroke').css({width:"100%", height:"100%"});
+    $('.title').css({opacity:"0"});
+    console.log(0);
+    // var options = {
+    //     duration: 1,
+    //     queue: true,
+    //     color: "#e5dedc",
+    //     size: 40,
+    //     inkAmount: 6,
+    //     root: '.brushStroke',
+    //     end: function () {
+    //         bs.erase();
+    //     }
+    // };
+    //
+    //
+    // var bs = new Brushstroke(options);
+    //
+    // bs.draw();
+    // $('.brushStroke').css({width:"100%", height:"100%"});
 
     setTimeout(function () {
         $('#text').css({display:"none"});
@@ -175,10 +177,11 @@ function  nextMusic() {
     },1000);
 
 
-
     setTimeout(function () {
-        $('.brushStroke').css({width:"0", height:"0"});
-    },3000);
+        // $('.brushStroke').css({width:"0", height:"0"});
+        $('.title').css({opacity:"1"});
+        console.log(1);
+    },1001);
 }
 
 function prevMusic() {

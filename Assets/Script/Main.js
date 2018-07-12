@@ -60,7 +60,7 @@ $('.circle-play').click(function () {
         });
 
        $('.title').addClass('subtitle');
-       $('.title').html("პირველი სათაური");
+       $('.title').html("ლაქები");
     },1500);
 
     setTimeout(function () {
