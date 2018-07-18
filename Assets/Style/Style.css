@@ -247,9 +247,10 @@ ul li{
 }
 
 .time-counter{
-    font-family: Arial,sans-serif;
-    font-size: 1rem;
-    color: #333333;
+    font-family: "INDIGO",sans-serif;
+    font-size: 1.5rem;
+    padding-left: 3px;
+    color: #727375;
     opacity: 0;
 }
 
@@ -705,6 +706,13 @@ canvas{
     display: block;
     margin-bottom: 16px;
     background: #333333;
+    transition: transform .3s;
+}
+.playlistButton.active span:nth-of-type(1) {
+    transform: rotate(45deg) translate(14px, 8px);
+}
+.playlistButton.active span:nth-of-type(2) {
+    transform: rotate(-45deg) translate(6px, -1px);
 }
 
 .audio-files{
@@ -729,7 +737,8 @@ canvas{
 
 .audio-files p{
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 60px;
     font-family: "INDIGO", sans-serif;
     color: #ffffff;
 }

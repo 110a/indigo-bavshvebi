@@ -41,6 +41,7 @@ playList();
 
 $('.playlistButton').click(function () {
     $('.audio-files').slideToggle();
+    $(this).toggleClass('active');
 });
 
 $('.audio-files ul li p').click(function () {
