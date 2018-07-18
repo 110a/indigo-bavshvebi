@@ -173,7 +173,7 @@ $( document ).ready(function() {
 
     var x = new Vivus('my-svg',
         {
-            type: 'oneByOne',
-            duration: 800
+            type: 'scenario',
+            duration: 20
         }, callback);
 });
