@@ -60,7 +60,7 @@ $('.circle-play').click(function () {
         });
 
        $('.title').addClass('subtitle');
-       $('.title').html("პირველი სათაური");
+       $('.title').html("ლაქები");
     },1500);
 
     setTimeout(function () {
@@ -118,7 +118,9 @@ var pathObj = {
     }
 };
 
-
+$('.fb-share-button').click(function () {
+   console.log(1);
+});
 
 $('.fb-share-button').mouseover(function () {
     $('.share-text p').css({opacity:"1"});
