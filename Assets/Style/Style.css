@@ -70,7 +70,9 @@ ul li{
     transition: opacity 100ms;
 }
 figure {
-   float: right; 
+   float: right;
+   padding-right: 20px;
+   box-sizing: border-box; 
 }
 figure.height {
     height: 80%;
