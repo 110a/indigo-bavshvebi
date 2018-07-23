@@ -22,7 +22,7 @@ $('.circle-play').click(function () {
 
     $('.control').toggleClass('pause play-pause');
 
-
+    $('.audio-files p:contains("ლაქები")').addClass('active-title');
     if(audio.paused===true){
         audio.play();
         isPlaying = true;
@@ -66,8 +66,6 @@ $('.circle-play').click(function () {
     setTimeout(function () {
         $('.brushStroke').css({width:"0", height:"0"});
     },3000);
-
-
 
 });
 
