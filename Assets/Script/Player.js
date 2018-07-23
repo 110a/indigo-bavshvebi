@@ -33,14 +33,14 @@ function playList() {
         // for(var j =0; j<name.length; j++) {
         //     name = name.replace("%20", " ");
         // }
-        $('.audio-files ul').append("<li><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+"</p></li>");
+        $('.audio-files ul').append("<li><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+" <span>01</span></p></li>");
     }
 }
 
 playList();
 
 $('.playlistButton').click(function () {
-    $('.audio-files').slideToggle();
+    $('.audio-files').fadeToggle();
     $(this).toggleClass('active');
 });
 
