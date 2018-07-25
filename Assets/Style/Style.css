@@ -86,6 +86,17 @@ figure.width {
     height: 100%;
     position: static;
 }
+.ids figure .imgs {
+    height: auto;
+    width: 40%;
+    float: right;
+    position: static;
+}
+.ids figure .imgs img {
+    height: auto;
+    width: 100%;
+    position: static;
+}
 .Id1 img{
 /*     width: 73% !important;
     height: 70% !important;
