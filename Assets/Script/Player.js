@@ -6,6 +6,7 @@ imageArr = $('.ids');
 titles = $('.titles');
 soundcircles = $('.levels');
 audio.volume = 0.66;
+var navigation = [];
 // var aText = new Array(
 //     "პირობითი ტექსტი ამონარიდი სტატიიდან ილუსტაციების გასაფორმებლად\n"
 // );
@@ -37,7 +38,19 @@ function playList() {
     }
 }
 
+
 playList();
+navigation = $('.audio-files p');
+$(navigation[0]).addClass("active-title");
+
+// function parseTitles(){
+//     var quant1= navigation.length;
+//     var name, symbol;
+//     for(let i = 0; i<quant1; i++){
+//         name = $(navigation[i]).html();
+//         symbol = name.indexOf("<");
+//     }
+// }
 
 $('.playlistButton').click(function () {
     $('.audio-files').fadeToggle();
@@ -123,7 +136,6 @@ function currTiming() {
 function  nextMusic() {
 
     $('.title').css({opacity:"0"});
-    console.log(0);
     // var options = {
     //     duration: 1,
     //     queue: true,
@@ -163,6 +175,10 @@ function  nextMusic() {
         }
 
         $('.title').html($(titles[currIndex]).html());
+        for(let i=0; i<titles.length; i++){
+            $('.audio-files p').removeClass('active-title');
+        }
+        $(navigation[currIndex]).addClass('active-title');
         $(imageArr[currIndex]).addClass("active-Id");
         audio.src = audioArr[currIndex].src;
 
@@ -181,7 +197,6 @@ function  nextMusic() {
     setTimeout(function () {
         // $('.brushStroke').css({width:"0", height:"0"});
         $('.title').css({opacity:"1"});
-        console.log(1);
     },1001);
 }
 
@@ -224,6 +239,10 @@ function prevMusic() {
             audio.pause();
         }
         $('.title').html($(titles[currIndex]).html());
+        for(let i=0; i<titles.length; i++){
+            $('.audio-files p').removeClass('active-title');
+        }
+        $(navigation[currIndex]).addClass('active-title');
         $(imageArr[currIndex]).addClass("active-Id");
         if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
         else{$('.currIndex').html(currIndex+1);}
@@ -243,6 +262,11 @@ $(function changeAudio() {
    $('.prev-arrow').click(function () {
        prevMusic();
    })
+});
+
+$('.audio-files p').click(function () {
+    $('.audio-files p').removeClass('active-title');
+    $(this).addClass('active-title');
 });
 
 audio.ontimeupdate =function () {
@@ -292,7 +316,7 @@ $(function () {
           $(this).children('.inside-circle').css({border: "2px solid #333333"});
           $('.level2 .inside-circle').css({border: "2px solid #727375"});
           $('.level3 .inside-circle').css({border: "2px solid #727375"});
-          console.log(audio.volume);
+
       }
       else if($(this).hasClass("level2")){
           audio.volume=0.66;
@@ -301,7 +325,6 @@ $(function () {
           $(this).children('.inside-circle').css({border: "2px solid #333333"});
           $('.level1 .inside-circle').css({border: "2px solid #333333"});
           $('.level3 .inside-circle').css({border: "2px solid #727375"});
-          console.log(audio.volume);
       }
       else if($(this).hasClass("level3")){
           audio.volume=1;
@@ -310,7 +333,6 @@ $(function () {
           $('.level1 .inside-circle').css({border: "2px solid #333333"});
           $('.level2 .inside-circle').css({border: "2px solid #333333"});
           $('.level3 .inside-circle').css({border: "2px solid #333333"});
-          console.log(audio.volume);
       }
    });
 
