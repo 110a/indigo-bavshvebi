@@ -1,23 +1,26 @@
 $('.circle-play').click(function () {
 
+  $('#text').fadeOut();
+$('.left-image').addClass('fade-left');
+$('.right-image').addClass('fade-right');
     // Options for customization
-    var options = {
-        duration: 1,
-        queue: true,
-        color: "#e5dedc",
-        size: 40,
-        inkAmount: 4,
-        root: '.brushStroke',
-        end: function () {
-            bs.erase();
-        }
-    };
+    // var options = {
+    //     duration: 1,
+    //     queue: true,
+    //     color: "#e5dedc",
+    //     size: 40,
+    //     inkAmount: 4,
+    //     root: '.brushStroke',
+    //     end: function () {
+    //         bs.erase();
+    //     }
+    // };
 
 // Initialization
-    var bs = new Brushstroke(options);
-
-    bs.draw();
-    $('.brushStroke').css({width:"100%", height:"100%"});
+    // var bs = new Brushstroke(options);
+    //
+    // bs.draw();
+    // $('.brushStroke').css({width:"100%", height:"100%"});
 
 
     $('.control').toggleClass('pause play-pause');
@@ -34,7 +37,7 @@ $('.circle-play').click(function () {
     timing();
 
     setTimeout(function () {
-       $('.mainId').css({display:"none"});
+       $('.mainId').fadeOut();
        $('#text').css({display:"none"});
        $('.Id1').addClass("active-Id");
     },1000);

@@ -220,7 +220,6 @@ figure.width {
     -o-transition: opacity 1000ms;
     transition: opacity 1000ms;
 }
-
 .circle{
     width: 80px;
     height: 80px;
@@ -234,8 +233,13 @@ figure.width {
     border-radius: 50%;
     position: relative;
     cursor: pointer;
-}
 
+    transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+}
+.circle:hover {
+    opacity: 0.6;
+}
 .play{
     width: 0;
     height: 0;
@@ -786,7 +790,7 @@ canvas{
     opacity: 0;
     background-image: url(../Images/SVG/play-blue.svg);
     transition: opacity .9s;
-    margin-top: -10px;
+    margin-top: 0px;
 }
 .audio-files p:hover{
     opacity: 0.6;
@@ -800,6 +804,7 @@ canvas{
 }
 .audio-files p.active-title:after{
     background-image: url(../Images/SVG/play-red.svg);
+    opacity: 1;
 }
 .subtitle{
     font-family: "INDIGO", sans-serif !important;
@@ -922,6 +927,17 @@ canvas{
 .left-image {
     animation: fontbulger 2s infinite;
     animation-delay: 1s;
+    transition: right .9s, opacity .9s;
+}
+.left-image.fade-left {
+    animation-play-state: paused;
+    right: 0%;
+}
+.right-image.fade-right {
+    animation-play-state: paused;
+    left: 0%;
+    transition: left .9s, opacity .9s;
+
 }
 @keyframes fontbulger {
   0%   { transform: translate(0px, 0px) }

@@ -1,3 +1,5 @@
+
+
 var audio = $('.audio-player')[0];
 var currIndex, audioArr, isPlaying=false, imageArr, currIMage;
 var wholeLength, currMin, currSec, durrMin, durrSec , titles, soundcircles;
@@ -34,7 +36,7 @@ function playList() {
         // for(var j =0; j<name.length; j++) {
         //     name = name.replace("%20", " ");
         // }
-        $('.audio-files ul').append("<li><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+" <span>01</span></p></li>");
+        $('.audio-files ul').append("<li><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+" <span>0"+([i+1])+"</span></p></li>");
     }
 }
 
@@ -202,23 +204,25 @@ function  nextMusic() {
 
 function prevMusic() {
 
-    var options = {
-        duration: 1,
-        queue: true,
-        color: "#e5dedc",
-        size: 40,
-        inkAmount: 4,
-        root: '.brushStroke',
-        end: function () {
-            bs.erase();
-        }
-    };
+    $('.title').css({opacity:"0"});
+
+    // var options = {
+    //     duration: 1,
+    //     queue: true,
+    //     color: "#e5dedc",
+    //     size: 40,
+    //     inkAmount: 4,
+    //     root: '.brushStroke',
+    //     end: function () {
+    //         bs.erase();
+    //     }
+    // };
 
 
-    var bs = new Brushstroke(options);
+    // var bs = new Brushstroke(options);
 
-    bs.draw();
-    $('.brushStroke').css({width:"100%", height:"100%"});
+    // bs.draw();
+    // $('.brushStroke').css({width:"100%", height:"100%"});
 
     setTimeout(function () {
         $('#text').css({display:"none"});
@@ -249,8 +253,9 @@ function prevMusic() {
     },1000);
 
     setTimeout(function () {
-        $('.brushStroke').css({width:"0", height:"0"});
-    },3000);
+        // $('.brushStroke').css({width:"0", height:"0"});
+        $('.title').css({opacity:"1"});
+    },1001);
 
 }
 
