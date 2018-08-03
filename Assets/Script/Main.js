@@ -3,6 +3,7 @@ $('.circle-play').click(function () {
   $('#text').fadeOut();
 $('.left-image').addClass('fade-left');
 $('.right-image').addClass('fade-right');
+$('.playlistButton').addClass('display');
     // Options for customization
     // var options = {
     //     duration: 1,
