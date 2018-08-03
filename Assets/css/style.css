@@ -11,18 +11,18 @@ a{
     text-decoration: none;
 }
 @font-face {
-  font-family: 'indigo';
-  src: url('../fonts/INDIGO-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/INDIGO-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/INDIGO-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/INDIGO-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/INDIGO-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-family: 'indigo-regular';
+  src: url('../fonts/indigo-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/indigo-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/indigo-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/indigo-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/indigo-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 body{
     font-size: 0;
-    background: url("../Images/bg.png") repeat;
+    background: url("../images/bg.png") repeat;
     overflow: hidden;
-    font-family: "indigo";
+    font-family: "indigo-regular";
 }
 
 ul li{
