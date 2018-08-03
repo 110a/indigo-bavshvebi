@@ -10,12 +10,19 @@
 a{
     text-decoration: none;
 }
-
+@font-face {
+  font-family: 'indigo';
+  src: url('../fonts/INDIGO-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/INDIGO-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/INDIGO-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/INDIGO-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/INDIGO-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
 body{
     font-size: 0;
     background: url("../Images/bg.png") repeat;
     overflow: hidden;
-    font-family: "INDIGO", sans-serif;
+    font-family: "indigo";
 }
 
 ul li{
@@ -72,7 +79,7 @@ ul li{
 figure {
    float: right;
    padding-right: 20px;
-   box-sizing: border-box; 
+   box-sizing: border-box;
 }
 figure.height {
     height: 80%;
@@ -279,7 +286,6 @@ figure.width {
 }
 
 .time-counter{
-    font-family: "INDIGO",sans-serif;
     font-size: 1.5rem;
     padding-left: 3px;
     color: #727375;
@@ -287,7 +293,6 @@ figure.width {
 }
 
 .title{
-    font-family: "INDIGO",sans-serif;
     display: inline-block;
     font-size: 5.25rem;
     color: #AB2424;
@@ -302,7 +307,6 @@ figure.width {
 
 .counter{
     display: inline-block;
-    font-family: "INDIGO", sans-serif;
     font-size: 3.12500rem;
     color: #727375;
     vertical-align: middle;
@@ -693,7 +697,6 @@ canvas{
 }
 
 .read-article p{
-    font-family: "INDIGO", sans-serif;
     color: #333333;
     font-size: 1.5rem;
 }
@@ -810,7 +813,6 @@ canvas{
     opacity: 1;
 }
 .subtitle{
-    font-family: "INDIGO", sans-serif !important;
     font-size: 5rem !important;
     color: #3B4960 !important;
 }
@@ -839,7 +841,6 @@ canvas{
     -ms-transition: opacity 250ms ease-in-out;
     -o-transition: opacity 250ms ease-in-out;
     transition: opacity 250ms ease-in-out;
-    font-family: "INDIGO", sans-serif;
     font-size: 23px;
     color: #333333;
 }

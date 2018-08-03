@@ -1,28 +1,4 @@
 @font-face {
-    font-family: 'BPG Nino Medium Condenced'!important;
-    src: url('../Fonts/BPGNinoMediumCondenced.eot')!important;
-    src: url('../Fonts/BPGNinoMediumCondenced.eot?#iefix') format('embedded-opentype')!important;
-    url('../Fonts/BPGNinoMediumCondenced.woff2') format('woff2')!important,
-    url('../Fonts/BPGNinoMediumCondenced.woff') format('woff')!important,
-    url('../Fonts/BPGNinoMediumCondenced.ttf') format('truetype')!important,
-    url('../Fonts/BPGNinoMediumCondenced.svg#BPGNinoMediumCondenced') format('svg')!important,
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Arial';
-    src: url('../Fonts/ArialMT.eot');
-    src: url('../Fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
-    url('../Fonts/ArialMT.woff2') format('woff2'),
-    url('../Fonts/ArialMT.woff') format('woff'),
-    url('../Fonts/ArialMT.ttf') format('truetype'),
-    url('../Fonts/ArialMT.svg#ArialMT') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'INDIGO';
     src: url('../Fonts/INDIGO-Regular.eot')!important;
     src: url('../Fonts/INDIGO-Regular.eot?#iefix') format('embedded-opentype')!important;
@@ -105,4 +81,3 @@
     font-weight: 500;
     font-style: normal;
 }
-
