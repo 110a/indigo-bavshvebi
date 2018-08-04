@@ -16,8 +16,14 @@ a{
   src: url('https://110a.github.io/indigo-bavshvebi/Assets/fonts/indigo-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('https://110a.github.io/indigo-bavshvebi/Assets/fonts/indigo-regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('https://110a.github.io/indigo-bavshvebi/Assets/fonts/indigo-regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('https://110a.github.io/indigo-bavshvebi/Assets/fonts/indigo-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://110a.github.io/indigo-bavshvebi/Assets/fonts/indigo-regular.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
+
+@font-face {
+  font-family: 'indigo';
+  src: url('../fonts/indigo-webfont.woff2');
+}
+
 body{
     font-size: 0;
     overflow: hidden;
