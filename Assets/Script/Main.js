@@ -169,18 +169,18 @@ $(document).on('keyup', function(e) {
 // });
 
 
-// $( document ).ready(function() {
-// setTimeout(function () {
-//
-//     var callback = function () {
-//         $('.circle-play').css({opacity:"1", cursor:"pointer"});
-//     };
-//
-//     var x = new Vivus('my-svg',
-//         {
-//             type: 'scenario',
-//             duration: 20
-//         }, callback);
-//
-//         },3000);
-// });
+$( document ).ready(function() {
+setTimeout(function () {
+
+    var callback = function () {
+        $('.circle-play').css({opacity:"1", cursor:"pointer"});
+    };
+
+    var x = new Vivus('my-svg',
+        {
+            type: 'scenario',
+            duration: 20
+        }, callback);
+
+        },3000);
+});
