@@ -169,7 +169,7 @@ $(document).on('keyup', function(e) {
 // });
 
 
-$( document ).ready(function() {
+
 setTimeout(function () {
 
     var callback = function () {
@@ -182,5 +182,5 @@ setTimeout(function () {
             duration: 20
         }, callback);
 
-        },3000);
+  
 });

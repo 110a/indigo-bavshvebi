@@ -2,7 +2,6 @@
 .Id2.ids,
 .Id3.ids,
 .Id4.ids,
-.Id5.ids,
 .Id6.ids,
 .Id7.ids,
 .Id8.ids,
@@ -11,7 +10,6 @@
 }
 .Id1.ids.active-Id,
 .Id3.ids.active-Id,
-.Id5.ids.active-Id,
 .Id7.ids.active-Id,
 .Id9.ids.active-Id {
   animation: fontbulger 2s infinite;
@@ -23,11 +21,10 @@
 .Id8.ids.active-Id,
 .Id10.ids.active-Id {
   animation: second 2s infinite;
-  animation-delay: 1s; 
+  animation-delay: 1s;
 }
 @keyframes fontbulger {
   0%   { transform: translate(0px, 0px) }
   50% { transform: translate(5px, 5px) }
   100% { transform: translate(0px, 0px) }
 }
-

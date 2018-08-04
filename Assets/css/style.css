@@ -23,6 +23,7 @@ body{
     font-size: 0;
     overflow: hidden;
     font-family: "indigo-regular";
+    position: relative;
 }
 
 ul li{
@@ -64,10 +65,6 @@ ul li{
     height: 100%;
 }
 
-.ids img{
-    position: absolute;
-}
-
 #central-container .active-Id{
     opacity: 1;
     -webkit-transition: opacity 100ms;
@@ -76,105 +73,36 @@ ul li{
     -o-transition: opacity 100ms;
     transition: opacity 100ms;
 }
-figure {
-   float: right;
-   padding-right: 20px;
-   box-sizing: border-box;
+figure.width-large {
+   width: 60%;
+   position: absolute;
+   top: 50%;
+   right: 30px;
+   transform: translate(0%, -50%);
 }
-figure.height {
-    height: 80%;
-    margin-top: 5%;
+figure.width-medium {
+   width: 35%;
+   position: absolute;
+   top: 50%;
+   right: 30px;
+   transform: translate(0%, -50%);
 }
-figure.width {
-    height: 60%;
-    margin-top: 10%;
+figure.width-xl-nopadding {
+   width: 90%;
+   position: absolute;
+   top: 50%;
+   right: 0px;
+   transform: translate(0%, -50%);
 }
-.ids figure img {
-    height: 100%;
-    position: static;
-}
-.ids figure .imgs {
-    height: auto;
-    width: 40%;
-    float: right;
-    position: static;
+figure img {
+   width: 100%;
+   /* height: auto; */
 }
 .ids figure .imgs img {
     height: auto;
     width: 100%;
     position: static;
 }
-.Id1 img{
-/*     width: 73% !important;
-    height: 70% !important;
-    right: 5% !important;
-    top: 4% !important; */
-}
-
-.Id2 img{
-/*     width: 25% !important;
-    height: 66% !important; */
-    /* position: absolute; */
-/*     right: 17% !important;
-    top: 14% !important; */
-}
-
-
-.Id3 img{
-/*     width: 35% !important;
-    height: 35% !important;
-    right: 10% !important;
-    top: 40% !important; */
-}
-
-.Id4 img{
-/*     width: 25% !important;
-    height: 80% !important;
-    right: 10% !important; */
-    /* bottom: 10%!important; */
-/*     top: 14% !important; */
-}
-
-.Id5 img{
-/*     width: 35% !important;
-    height: 80% !important;
-    right: 12% !important;
-    top: 5% !important; */
-}
-
-.Id6 img{
-/*     width: 30% !important;
-    height: 85% !important;
-    right: 23% !important;
-    top: 3% !important; */
-}
-
-.Id7 img{
-/*     width: 55% !important;
-    height: 70% !important;
-    right: 8% !important;
-    top: 10% !important; */
-}
-
-.Id8 img{
-/*     width: 70% !important;
-    height: 60% !important;
-    right: 10% !important;
-    top: 10% !important; */
-}
-
-/* .Id9 img{
-    height: 90%;
-    right: 10%;
-} */
-
-/* .Id10 img{
-    width: 48% !important;
-    height: 69% !important;
-    right: 14% !important;
-    top: 8% !important;
-} */
-
 #central-container .mainId {
     position: absolute;
     top: 0;
