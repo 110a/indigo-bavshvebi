@@ -762,7 +762,7 @@ canvas{
     width: 50%;
     height: 100%;
     text-align: right;
-    background: url("../Images/bg.png") repeat;
+    background: url("../images/bg.gif") repeat;
     z-index: 100;
     border-left: 1px solid #ccc;
     /* overflow: hidden; */
