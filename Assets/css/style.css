@@ -20,7 +20,7 @@ a{
 }
 body{
     font-size: 0;
-    background: url("../images/bg.png") repeat;
+    background: url("../images/bg.gif") repeat;
     overflow: hidden;
     font-family: "indigo-regular";
 }
