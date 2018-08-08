@@ -19,6 +19,17 @@ a{
        url('../fonts/indigo-regular.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
+.loader{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
 body{
     font-size: 0;
     overflow: hidden;
@@ -141,7 +152,7 @@ figure img {
 .circle-play{
     position: absolute;
     cursor: default;
-    opacity: 0;
+    opacity: 1;
     top: 50%;
     left: 50%;
     z-index: 200;
@@ -155,6 +166,7 @@ figure img {
     -ms-transition: opacity 1000ms;
     -o-transition: opacity 1000ms;
     transition: opacity 1000ms;
+    z-index: 1000;
 }
 .circle{
     width: 80px;

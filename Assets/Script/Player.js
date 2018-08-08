@@ -1,6 +1,4 @@
-$(window).on('load', function () {
-    console.log(1);
-});
+
 
 var audio = $('.audio-player')[0];
 var currIndex, audioArr, isPlaying=false, imageArr, currIMage;
