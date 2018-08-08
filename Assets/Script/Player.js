@@ -36,14 +36,19 @@ function playList() {
         // for(var j =0; j<name.length; j++) {
         //     name = name.replace("%20", " ");
         // }
-        $('.audio-files ul').append("<li><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+" <span>0"+([i+1])+"</span></p></li>");
+        if(i>=10){
+            $('.audio-files ul').append("<li><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+" <span>"+([i])+"</span></p></li>");
+        }
+        else{
+            $('.audio-files ul').append("<li><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+" <span>0"+([i])+"</span></p></li>");
+        }
     }
 }
 
 
 playList();
 navigation = $('.audio-files p');
-$(navigation[0]).addClass("active-title");
+// $(navigation[0]).addClass("active-title");
 
 // function parseTitles(){
 //     var quant1= navigation.length;
@@ -69,8 +74,8 @@ $('.audio-files ul li p').click(function () {
                 audio.play();
             }
             currIndex=i;
-            if(currIndex +1<10){$('.currIndex').html(0+ (currIndex+1).toString());}
-            else{$('.currIndex').html(currIndex+1);}
+            if(currIndex<10){$('.currIndex').html(0+ (currIndex).toString());}
+            else{$('.currIndex').html(currIndex);}
         }
     }
     var currTitle = $(this).html();
@@ -146,9 +151,9 @@ function  nextMusic() {
         $('.ids').removeClass("active-Id");
 
         if(currIndex==-1){
-            $(imageArr[9]).addClass("active-Id");
+            $(imageArr[10]).addClass("active-Id");
         }
-        if(currIndex==10){
+        if(currIndex==11){
             $(imageArr[0]).addClass("active-Id");
         }
     },1000);
@@ -156,7 +161,7 @@ function  nextMusic() {
 
     setTimeout(function () {
         // currIndex ++;
-        if(currIndex +1 >audioArr.length){
+        if(currIndex >audioArr.length){
             currIndex = 0;
         }
 
@@ -174,8 +179,8 @@ function  nextMusic() {
         else{
             audio.pause();
         }
-        if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
-        else {$('.currIndex').html(currIndex+1);}
+        if (currIndex<10){$('.currIndex').html("0" + (currIndex).toString());}
+        else {$('.currIndex').html(currIndex);}
 
     },1000);
 
@@ -232,8 +237,8 @@ function prevMusic() {
         }
         $(navigation[currIndex]).addClass('active-title');
         $(imageArr[currIndex]).addClass("active-Id");
-        if (currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString());}
-        else{$('.currIndex').html(currIndex+1);}
+        if (currIndex<10){$('.currIndex').html("0" + (currIndex).toString());}
+        else{$('.currIndex').html(currIndex);}
     },1000);
 
     setTimeout(function () {

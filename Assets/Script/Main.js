@@ -26,7 +26,7 @@ $('.playlistButton').addClass('display');
 
     $('.control').toggleClass('pause play-pause');
 
-    $('.audio-files p:contains("ლაქები")').addClass('active-title');
+    $('.audio-files p:contains("შესავალი")').addClass('active-title');
     if(audio.paused===true){
         audio.play();
         isPlaying = true;
@@ -40,7 +40,7 @@ $('.playlistButton').addClass('display');
     setTimeout(function () {
        $('.mainId').fadeOut();
        $('#text').css({display:"none"});
-       $('.Id1').addClass("active-Id");
+       // $('.Id1').addClass("active-Id");
     },1000);
 
     setTimeout(function () {
@@ -56,15 +56,15 @@ $('.playlistButton').addClass('display');
                     currIndex = i;
                 }
             }
-            if(currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString())}
-            else {$('.currIndex').html(currIndex+1);}
-            if(audioArr.length<10){$('.whole-number').html("0" + audioArr.length);}
-            else{$('.whole-number').html(audioArr.length);}
+            if(currIndex<10){$('.currIndex').html("0" + (currIndex).toString())}
+            else {$('.currIndex').html(currIndex);}
+            if(audioArr.length<10){$('.whole-number').html("0" + audioArr.length - 1);}
+            else{$('.whole-number').html(audioArr.length - 1);}
             timing();
         });
 
        $('.title').addClass('subtitle');
-       $('.title').html("ლაქები");
+       $('.title').html("შესავალი");
     },1500);
 
     setTimeout(function () {
@@ -121,7 +121,6 @@ var pathObj = {
 };
 
 $('.fb-share-button').click(function () {
-   console.log(1);
 });
 
 $('.fb-share-button').mouseover(function () {
