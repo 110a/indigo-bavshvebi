@@ -250,10 +250,24 @@ function prevMusic() {
 
 $(function changeAudio() {
    $('.next-arrow').click(function () {
+       if($('.currIndex').html("00")){
+           $('.left-image').addClass('fade-left');
+           $('.right-image').addClass('fade-right');
+           setTimeout(function () {
+               $('.mainId').fadeOut();
+           },600)
+       }
         nextMusic();
    });
 
    $('.prev-arrow').click(function () {
+       if($('.currIndex').html("00")){
+           $('.left-image').addClass('fade-left');
+           $('.right-image').addClass('fade-right');
+           setTimeout(function () {
+               $('.mainId').fadeOut();
+           },600)
+       }
        prevMusic();
    })
 });

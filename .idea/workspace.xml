@@ -4,7 +4,6 @@
     <list default="true" id="6073a5b9-8649-4388-bf05-7eed815042dc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/Script/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player.js" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,22 +20,26 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="245" column="13" lean-forward="true" selection-start-line="245" selection-start-column="13" selection-end-line="245" selection-end-column="13" />
+            <state relative-caret-position="3492">
+              <caret line="227" column="22" lean-forward="true" selection-start-line="227" selection-start-column="22" selection-end-line="227" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="864" column="21" selection-start-line="864" selection-start-column="12" selection-end-line="864" selection-end-column="21" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="Player.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Script/Player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1121">
-              <caret line="168" column="43" lean-forward="true" selection-start-line="168" selection-start-column="43" selection-end-line="168" selection-end-column="43" />
+            <state relative-caret-position="577">
+              <caret line="263" column="8" selection-start-line="263" selection-start-column="8" selection-end-line="263" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -44,8 +47,8 @@
       <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -65,10 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>title</find>
-      <find>next</find>
-      <find>.title</find>
-      <find>lazy</find>
       <find>l</find>
       <find>.audio-files p:after</find>
       <find>segment</find>
@@ -90,11 +89,15 @@
       <find>whole</find>
       <find>.active-title</find>
       <find>active-title</find>
-      <find>whole-number</find>
       <find>ლაქები</find>
       <find>01</find>
       <find>03</find>
       <find>span</find>
+      <find>id=&quot;text</find>
+      <find>mainId</find>
+      <find>fade-left</find>
+      <find>nex</find>
+      <find>whole-number</find>
     </findStrings>
     <replaceStrings>
       <replace>fill=&quot;#B12B2B&quot;</replace>
@@ -133,8 +136,8 @@
         <option value="$PROJECT_DIR$/vaso.html" />
         <option value="$USER_HOME$/Desktop/vaso.html" />
         <option value="$PROJECT_DIR$/Assets/Style/vaso2.html" />
-        <option value="$PROJECT_DIR$/Assets/Script/Main.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Assets/Script/Main.js" />
         <option value="$PROJECT_DIR$/Assets/Script/Player.js" />
       </list>
     </option>
@@ -145,7 +148,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -166,12 +169,6 @@
               <item name="indigo-bavshvebi" type="b2602c69:ProjectViewProjectNode" />
               <item name="indigo-bavshvebi" type="462c0819:PsiDirectoryNode" />
               <item name="Assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="indigo-bavshvebi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="indigo-bavshvebi" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,15 +243,15 @@
       <workItem from="1532333162619" duration="8062000" />
       <workItem from="1532500030087" duration="13320000" />
       <workItem from="1533034865880" duration="604000" />
-      <workItem from="1533712892344" duration="3698000" />
+      <workItem from="1533712892344" duration="4663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165212000" />
+    <option name="totallyTimeSpent" value="166177000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2171875" />
@@ -414,27 +411,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        <state relative-caret-position="3492">
+          <caret line="227" column="22" lean-forward="true" selection-start-line="227" selection-start-column="22" selection-end-line="227" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="245" column="13" lean-forward="true" selection-start-line="245" selection-start-column="13" selection-end-line="245" selection-end-column="13" />
+        <state relative-caret-position="1155">
+          <caret line="864" column="21" selection-start-line="864" selection-start-column="12" selection-end-line="864" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Script/Player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="168" column="43" lean-forward="true" selection-start-line="168" selection-start-column="43" selection-end-line="168" selection-end-column="43" />
+        <state relative-caret-position="577">
+          <caret line="263" column="8" selection-start-line="263" selection-start-column="8" selection-end-line="263" selection-end-column="8" />
         </state>
       </provider>
     </entry>

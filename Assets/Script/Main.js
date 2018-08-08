@@ -1,8 +1,8 @@
 $('.circle-play').click(function () {
 
   $('#text').fadeOut();
-$('.left-image').addClass('fade-left');
-$('.right-image').addClass('fade-right');
+// $('.left-image').addClass('fade-left');
+// $('.right-image').addClass('fade-right');
 $('.playlistButton').addClass('display');
     // Options for customization
     // var options = {
@@ -38,7 +38,7 @@ $('.playlistButton').addClass('display');
     timing();
 
     setTimeout(function () {
-       $('.mainId').fadeOut();
+       // $('.mainId').fadeOut();
        $('#text').css({display:"none"});
        // $('.Id1').addClass("active-Id");
     },1000);
