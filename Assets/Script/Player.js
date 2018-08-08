@@ -1,4 +1,6 @@
-
+$(window).on('load', function () {
+    console.log(1);
+});
 
 var audio = $('.audio-player')[0];
 var currIndex, audioArr, isPlaying=false, imageArr, currIMage;
@@ -48,6 +50,7 @@ function playList() {
 
 playList();
 navigation = $('.audio-files p');
+
 // $(navigation[0]).addClass("active-title");
 
 // function parseTitles(){
@@ -78,9 +81,9 @@ $('.audio-files ul li p').click(function () {
             else{$('.currIndex').html(currIndex);}
         }
     }
-    var currTitle = $(this).html();
+    var currTitle = $(this).text().substr(0,$(this).text().length-2);
     setTimeout(function () {
-        $('.title').html(currTitle)
+        $('.title').html(currTitle);
     },1500);
 
     setTimeout(function () {
@@ -125,6 +128,14 @@ function currTiming() {
 
 
 function  nextMusic() {
+
+    if($('.currIndex').html("00")){
+        $('.left-image').addClass('fade-left');
+        $('.right-image').addClass('fade-right');
+        setTimeout(function () {
+            $('.mainId').fadeOut();
+        },600)
+    }
 
     $('.title').css({opacity:"0"});
     // var options = {
@@ -250,13 +261,6 @@ function prevMusic() {
 
 $(function changeAudio() {
    $('.next-arrow').click(function () {
-       if($('.currIndex').html("00")){
-           $('.left-image').addClass('fade-left');
-           $('.right-image').addClass('fade-right');
-           setTimeout(function () {
-               $('.mainId').fadeOut();
-           },600)
-       }
         nextMusic();
    });
 
