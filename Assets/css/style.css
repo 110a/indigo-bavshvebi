@@ -144,7 +144,7 @@ figure img {
     opacity: 0;
     top: 50%;
     left: 50%;
-    z-index: 100;
+    z-index: 200;
     -webkit-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
@@ -169,6 +169,7 @@ figure img {
     border-radius: 50%;
     position: relative;
     cursor: pointer;
+    z-index: 1000;
 
     transition: opacity .3s;
     -webkit-transition: opacity .3s;
@@ -206,7 +207,7 @@ figure img {
     position: absolute;
     bottom: 34vh;
     padding-left: 5%;
-    z-index: 100000000000;
+    z-index: 100;
     -webkit-transition: opacity 150ms;
     -moz-transition: opacity 150ms;
     -ms-transition: opacity 150ms;
@@ -892,4 +893,7 @@ canvas{
     width: 50%;
     z-index: 10;
     transform: translate(-50%, -50%);
+}
+@media (max-width: 1024px) {
+    
 }
