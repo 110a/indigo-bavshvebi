@@ -256,6 +256,10 @@ $(function changeAudio() {
 $('.audio-files p').click(function () {
     $('.audio-files p').removeClass('active-title');
     $(this).addClass('active-title');
+    for(let i=0; i<imageArr.length; i++){
+        $(imageArr[i]).removeClass("active-Id");
+    }
+    $(imageArr[currIndex]).addClass("active-Id");
 });
 
 audio.ontimeupdate =function () {
