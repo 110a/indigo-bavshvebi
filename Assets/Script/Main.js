@@ -181,5 +181,5 @@ setTimeout(function () {
             duration: 20
         }, callback);
 
-  
+
 });

@@ -28,6 +28,11 @@ a{
     top: 0;
     left: 0;
     z-index: 1000;
+    background-image: url(../images/loader.gif);
+    background-size: 50% 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 body{
