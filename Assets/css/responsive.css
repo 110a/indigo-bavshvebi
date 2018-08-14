@@ -22,9 +22,15 @@
   }
 }
 @media screen and (max-width: 705px) {
+    #audio-title{
+    bottom: 17vh;
+  }
   .subtitle{
     font-size: 4rem !important;
   }
+  .player-holder{
+    bottom: 3vh;
+}
   .time-counter{
     font-size: 1.3rem;
   }
