@@ -23,13 +23,15 @@
 }
 @media screen and (max-width: 705px) {
     #audio-title{
-    bottom: 17vh;
+    bottom: 20vh;
   }
   .subtitle{
     font-size: 4rem !important;
   }
   .player-holder{
+    position: absolute;
     bottom: 3vh;
+
 }
   .time-counter{
     font-size: 1.3rem;
@@ -51,6 +53,9 @@
   }
 }
 @media screen and (max-width: 440px) {
+  #audio-title{
+    bottom: 18vh;
+  }
   .counter{
     font-size: 36px;
     width: 70px;
