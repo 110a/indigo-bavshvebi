@@ -10,6 +10,13 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .audio-files {
+    width: 50%;
+    padding: 15px 100px 15px 40px;
+}
+.audio-files p {
+    font-size: 25px;
+}
   #my-svg, .loader-img {
     width: 65%;
   }
@@ -20,6 +27,12 @@
     font-size: 44px;
     width: 100px;
   }
+}
+@media screen and (max-width: 790px) {
+    .audio-files {
+    width: 70%;
+    padding: 15px 100px 15px 40px;
+}
 }
 @media screen and (max-width: 705px) {
     #audio-title{
@@ -56,6 +69,18 @@
 }
 figure.width-medium {
    width: 50%;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .audio-files {
+    width: 80%;
+    padding: 15px 100px 15px 40px;
+}
+@media screen and (max-width: 490px) {
+    .audio-files {
+    width: 100%;
+    padding: 15px 100px 15px 40px;
 }
 }
 @media screen and (max-width: 440px) {

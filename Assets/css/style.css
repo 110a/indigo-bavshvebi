@@ -652,7 +652,7 @@ canvas{
     top: 20px;
     right: 20px;
     text-align: center;
-    z-index: 100;
+    z-index: 200;
 }
 
 .share-social{
@@ -710,15 +710,14 @@ canvas{
     height: 100%;
     text-align: right;
     background: url("../images/bg.gif") repeat;
-    z-index: 100;
+    z-index: 150;
     border-left: 1px solid #ccc;
     /* overflow: hidden; */
     display: none;
     box-sizing: border-box;
     padding: 100px;
 }
-
-.audio-files ul li{
+.audio-files ul li {
     margin-bottom: 5px;
     display: inline-block;
     width: 100%;
@@ -728,7 +727,7 @@ canvas{
 .audio-files p{
     cursor: pointer;
     font-size: 30px;
-    line-height: 60px;
+    line-height: 50px;
     color: #3b4960;
     transition: all .3s;
 }
