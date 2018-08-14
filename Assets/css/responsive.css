@@ -13,10 +13,10 @@
   .audio-files {
     width: 50%;
     padding: 15px 100px 15px 40px;
-}
-.audio-files p {
+  }
+  .audio-files p {
     font-size: 25px;
-}
+  }
   #my-svg, .loader-img {
     width: 65%;
   }
@@ -29,13 +29,13 @@
   }
 }
 @media screen and (max-width: 790px) {
-    .audio-files {
+  .audio-files {
     width: 70%;
     padding: 15px 100px 15px 40px;
-}
+  }
 }
 @media screen and (max-width: 705px) {
-    #audio-title{
+  #audio-title{
     bottom: 20vh;
   }
   .subtitle{
@@ -45,7 +45,7 @@
     position: absolute;
     bottom: 3vh;
 
-}
+  }
   .time-counter{
     font-size: 1.3rem;
   }
@@ -65,36 +65,39 @@
     background-size: 60%;
   }
   figure.width-large {
-   width: 80%;
-}
-figure.width-medium {
-   width: 50%;
-}
+    width: 80%;
+  }
+  figure.width-medium {
+    width: 50%;
+  }
+  .read-article{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .audio-files {
+  .audio-files {
     width: 80%;
     padding: 15px 100px 15px 40px;
-}
-@media screen and (max-width: 490px) {
+  }
+  @media screen and (max-width: 490px) {
     .audio-files {
-    width: 100%;
-    padding: 15px 100px 15px 40px;
-}
-}
-@media screen and (max-width: 440px) {
-  #audio-title{
-    bottom: 18vh;
+      width: 100%;
+      padding: 15px 100px 15px 40px;
+    }
   }
-  .counter{
-    font-size: 36px;
-    width: 70px;
+  @media screen and (max-width: 440px) {
+    #audio-title{
+      bottom: 18vh;
+    }
+    .counter{
+      font-size: 36px;
+      width: 70px;
+    }
+    .progress{
+      margin: 0 10px;
+    }
+    figure.width-large {
+      top: 40%;
+    }
   }
-  .progress{
-    margin: 0 10px;
-  }
-  figure.width-large {
-   top: 40%;
-}
-}

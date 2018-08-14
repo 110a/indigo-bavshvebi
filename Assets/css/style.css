@@ -39,6 +39,7 @@ body{
     overflow: hidden;
     font-family: "indigo-regular";
     position: relative;
+    overflow-x: hidden;
 }
 
 ul li{
