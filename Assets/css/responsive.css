@@ -51,6 +51,12 @@
     width: 60px;
     background-size: 60%;
   }
+  figure.width-large {
+   width: 80%;
+}
+figure.width-medium {
+   width: 50%;
+}
 }
 @media screen and (max-width: 440px) {
   #audio-title{
@@ -63,4 +69,7 @@
   .progress{
     margin: 0 10px;
   }
+  figure.width-large {
+   top: 40%;
+}
 }
