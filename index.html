@@ -247,14 +247,49 @@
     <img class="left-image" src="Assets/Images/00-hand-two.png">
     <img class="right-image" src="Assets/Images/00-hand.png">
   </div>
-  <div class="Id0 ids">
-    <figure class="width-large">
-      <img src="Assets/Images/01.png" alt="შესავალი">
-      <figcaption class="titles">
-        შესავალი
-      </figcaption>
-    </figure>
+  <div class="Id0 ids about">
+    <div class="content">
+    <div class="logo-indigo">
+      <img src="Assets/Images/SVG/indigo-logo.svg" alt="ინდიგო">
+    </div>
+    <h5 class="about-title">პროექტის შესახებ</h5>
+    <div class="indigo-team">
+      <h4 class="capital">ტექსტი</h4>
+      <h3 class="regular">მარიამ აბესაძე, ნინო ლომაძე</h3>
+    </div>
+    <div class="indigo-team">
+      <h4 class="capital">ილუსტრაცია</h4>
+      <h3 class="regular"> მარიამ ზალდასტანიშვილი</h3>
+    </div>
+    <div class="indigo-team">
+      <h4 class="capital">მულტიმედია დიზაინი</h4>
+      <h3 class="regular"> ანი ასათიანი </h3>
+    </div>
+    <div class="indigo-team">
+      <h4 class="capital">ვებ დეველოპერი</h4>
+      <h3 class="regular"> მახო გელაშვილი </h3>
+    </div>
+    <div class="indigo-team">
+      <h4 class="capital">ხმის დიზაინი</h4>
+      <h3 class="regular"> მარიამ აბესაძე </h3>
+    </div>
   </div>
+    <div class="footer">
+      მომზადებულია ფონდ „ღია საზოგადოება - საქართველოს“ ფინანსური მხარდაჭერით. ავტორის/ავტორების მიერ საინფორმაციო მასალაში გამოთქმული მოსაზრება შესაძლოა არ გამოხატავდეს ფონდის პოზიციას. შესაბამისად, ფონდი არ არის პასუხისმგებელი მასალის შინაარსზე.
+    </div>
+    <div class="counter">
+        <span class="currIndex">00</span>
+        <span>/</span>
+        <span class="whole-number">10</span>
+    </div>
+    <div class="play-first">
+      <div class="circle">
+        <div class="arrow-triangle play">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="Id1 ids">
     <figure class="width-large">
       <img src="Assets/Images/01.png" alt="ლაქები">
@@ -341,7 +376,6 @@
   <div class="circle-play">
     <div class="circle">
       <div class="arrow-triangle play">
-
       </div>
     </div>
   </div>
@@ -377,77 +411,79 @@
 </div>
 
 <div class="player-holder">
+
   <div class="player">
     <audio class="audio-player" src="Assets/Audio/shesavali.mp3" >
       <source id="0" src="Assets/Audio/shesavali.mp3" data-name="შესავალი">
-        <source id="1" src="Assets/Audio/1.mp3" data-name="ლაქები">
-          <source id="2" src="Assets/Audio/2.mp3" data-name="უძილობა და შიშები">
-            <source id="3" src="Assets/Audio/3.mp3" data-name="ელენე სულ დამეკარგა">
-              <source id="4" src="Assets/Audio/4.mp3" data-name="მშვიდი პერიოდი">
-                <source id="5" src="Assets/Audio/5.mp3" data-name="ნიშნები">
-                  <source id="6" src="Assets/Audio/6.mp3" data-name="ხმები">
-                    <source id="7" src="Assets/Audio/7.mp3" data-name="ცოცხლები ურჩხულებს ვერ ხედავენ">
-                      <source id="8" src="Assets/Audio/8.mp3" data-name="მონეტის აგდება">
-                        <source id="9" src="Assets/Audio/9.mp3" data-name="ოცდაერთი დღე">
-                          <source id="10" src="Assets/Audio/10.mp3" data-name="შიშები ქრება">
-                          </audio>
-                        </div>
-                        <div class="controllers">
-                          <div class="counter">
-                            <span class="currIndex">00</span>
-                            <span>/</span>
-                            <span class="whole-number">10</span>
-                          </div>
+      <source id="1" src="Assets/Audio/1_musikit.mp3" data-name="ლაქები">
+      <source id="2" src="Assets/Audio/2_musikit.mp3" data-name="უძილობა და შიშები">
+      <source id="3" src="Assets/Audio/3_musikit.mp3" data-name="ელენე სულ დამეკარგა">
+      <source id="4" src="Assets/Audio/4_musikit.mp3" data-name="მშვიდი პერიოდი">
+      <source id="5" src="Assets/Audio/5_musikit.mp3" data-name="ნიშნები">
+      <source id="6" src="Assets/Audio/6_musikit.mp3" data-name="ხმები">
+      <source id="7" src="Assets/Audio/7_musikit.mp3" data-name="ცოცხლები ურჩხულებს ვერ ხედავენ">
+      <source id="8" src="Assets/Audio/8_musikit.mp3" data-name="მონეტის აგდება">
+      <source id="9" src="Assets/Audio/9_musikit.mp3" data-name="ოცდაერთი დღე">
+      <source id="10" src="Assets/Audio/10_musikit.mp3" data-name="შიშები ქრება">
+    </audio>
+  </div>
 
-                          <div class="progress">
-                            <span></span>
-                          </div>
-                          <input type="range" class="seek" min="0" value="0" style="display: none">
-                          <div class="controll-buttons">
-                            <span class="prev-arrow button"></span>
-                            <!--<span class="play-button ">-->
-                            <!--<span class="leftSpan "></span>-->
-                            <!--<span class="rightSpan "></span>-->
-                            <!--</span>-->
+  <div class="controllers">
+    <div class="counter">
+      <span class="currIndex">00</span>
+      <span>/</span>
+      <span class="whole-number">10</span>
+    </div>
 
-                            <span class="control play-pause">
-                              <span class="left"></span>
-                              <span class="right"></span>
-                            </span>
-                            <span class="next-arrow button"></span>
-                          </div>
-                          <label class="sound-controll">
-                            <div class="muteSound"><div class="soundLine"></div></div >
-                            <!--<input type="range" class="sound" min="0" max="1" step="0.01">-->
-                            <div class="sound-circles">
-                              <span class="level1 levels">
-                                <span class="inside-circle"></span>
-                              </span>
-                              <span class="level2 levels">
-                                <span class="inside-circle"></span>
-                              </span>
-                              <span class="level3 levels">
-                                <span class="inside-circle"></span>
-                              </span>
-                              <span class="level4">
-                                <span class="inside-circle"></span>
-                              </span>
-                            </div>
-                          </label>
+    <div class="progress">
+      <span></span>
+    </div>
 
-                        </div>
-                      </div>
-                      <div class="read-article">
-                        <a href="http://indigo.com.ge/articles/people/ana-irina-elene-da-sxvebi ">
-                          <p>სტატიის წაკითხვა</p>
-                          <span class="arrow-right"></span>
-                        </a>
-                      </div>
-                      <div class="outer"></div>
-                      <script src="Assets/Script/jquery-3.3.1.min.js"></script>
-                      <script src="Assets/Script/Main.js"></script>
-                      <script src="Assets/Script/Player.js"></script>
-                      <script src="Assets/Script/vivus.js"></script>
+    <input type="range" class="seek" min="0" value="0" style="display: none">
+    <div class="controll-buttons">
+      <span class="prev-arrow button"></span>
+      <!--<span class="play-button ">-->
+      <!--<span class="leftSpan "></span>-->
+      <!--<span class="rightSpan "></span>-->
+      <!--</span>-->
 
-                    </body>
-                    </html>
+      <span class="control play-pause">
+        <span class="left"></span>
+        <span class="right"></span>
+      </span>
+      <span class="next-arrow button"></span>
+    </div>
+    <label class="sound-controll">
+      <div class="muteSound"><div class="soundLine"></div></div >
+      <!--<input type="range" class="sound" min="0" max="1" step="0.01">-->
+      <div class="sound-circles">
+        <span class="level1 levels">
+          <span class="inside-circle"></span>
+        </span>
+        <span class="level2 levels">
+          <span class="inside-circle"></span>
+        </span>
+        <span class="level3 levels">
+          <span class="inside-circle"></span>
+        </span>
+        <span class="level4">
+          <span class="inside-circle"></span>
+        </span>
+      </div>
+    </label>
+  </div>
+</div>
+<div class="read-article">
+  <a href="http://indigo.com.ge/articles/people/ana-irina-elene-da-sxvebi ">
+    <p>სტატიის წაკითხვა</p>
+    <span class="arrow-right"></span>
+  </a>
+</div>
+<div class="outer"></div>
+<script src="Assets/Script/jquery-3.3.1.min.js"></script>
+<script src="Assets/Script/Main.js"></script>
+<script src="Assets/Script/Player.js"></script>
+<script src="Assets/Script/vivus.js"></script>
+
+</body>
+</html>

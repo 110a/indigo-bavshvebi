@@ -136,23 +136,6 @@ function  nextMusic() {
     }
 
     $('.title').css({opacity:"0"});
-    // var options = {
-    //     duration: 1,
-    //     queue: true,
-    //     color: "#e5dedc",
-    //     size: 40,
-    //     inkAmount: 6,
-    //     root: '.brushStroke',
-    //     end: function () {
-    //         bs.erase();
-    //     }
-    // };
-    //
-    //
-    // var bs = new Brushstroke(options);
-    //
-    // bs.draw();
-    // $('.brushStroke').css({width:"100%", height:"100%"});
 
     setTimeout(function () {
         $('#text').css({display:"none"});
@@ -195,7 +178,6 @@ function  nextMusic() {
 
 
     setTimeout(function () {
-        // $('.brushStroke').css({width:"0", height:"0"});
         $('.title').css({opacity:"1"});
     },1001);
 }
@@ -204,23 +186,6 @@ function prevMusic() {
 
     $('.title').css({opacity:"0"});
 
-    // var options = {
-    //     duration: 1,
-    //     queue: true,
-    //     color: "#e5dedc",
-    //     size: 40,
-    //     inkAmount: 4,
-    //     root: '.brushStroke',
-    //     end: function () {
-    //         bs.erase();
-    //     }
-    // };
-
-
-    // var bs = new Brushstroke(options);
-
-    // bs.draw();
-    // $('.brushStroke').css({width:"100%", height:"100%"});
 
     setTimeout(function () {
         $('#text').css({display:"none"});
@@ -384,44 +349,3 @@ $(".progress").on("click", function(e){
     var audioTime = audio.duration * percentage;
     audio.currentTime = audioTime;
 });
-
-//
-// function typewriter()
-// {
-//     sContents =  ' ';
-//     iRow = Math.max(0, iIndex-iScrollAt);
-//     var destination = $('.curved-text textPath');
-//
-//     while ( iRow < iIndex ) {
-//         sContents += aText[iRow++] + '<br />';
-//     }
-//     destination.html( sContents + aText[iIndex].substring(0, iTextPos) + " ");
-//     if ( iTextPos++ == iArrLength ) {
-//         iTextPos = 0;
-//         iIndex++;
-//         if ( iIndex != aText.length ) {
-//             iArrLength = aText[iIndex].length;
-//             setTimeout("typewriter()", 500);
-//         }
-//     } else {
-//         setTimeout("typewriter()", iSpeed);
-//     }
-// }
-//
-//
-// typewriter();
-//
-//
-//
-// $(".progress").click(function(e){
-//     console.log(audio.currentTime);
-//     var timing = e.pageX-$(this).offset().left; //current width of progress
-//     var duration = audio.duration;	//total duration
-//     var currentTime = (duration * timing) / $(".progress").width();
-//     console.log(currentTime);
-//     var percent = (currentTime * 100)/duration;
-//     console.log(percent);
-//     //console.log(timing+"  "+currentTime+" " + percent+" "+duration);
-//     audio.currentTime = 15;
-//     console.log(audio.currentTime);
-// });
