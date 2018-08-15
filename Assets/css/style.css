@@ -44,14 +44,14 @@ a{
 
 body{
     font-size: 0;
-    overflow: hidden;
     font-family: "indigo-regular";
     position: relative;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 .logo-indigo {
     width: 100px;
-    margin-left: 60px;
+    margin-left: 5%;
 }
 .about-title {
     font-size: 60px;
@@ -66,11 +66,16 @@ body{
     text-align: center;
 }
 .about .footer {
-  font-family: 'bpg-nino-medium-condenced';
-  font-size: 14px;
+  margin: 100px auto 40px auto;
+  padding-left: 5%;
+}
+.about p {
   width: 80%;
-  margin: 100px auto 0 auto;
-   
+  text-align: center;
+  font-family: 'bpg-nino-medium-condenced';
+  font-size: 12px;
+  line-height: 22px;
+  margin: 0px auto 40px auto;
 }
 .regular {
   font-family: 'bpg-nino-medium-condenced';
@@ -88,7 +93,7 @@ ul li{
 #central-container{
     display: inline-block;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -118,6 +123,8 @@ ul li{
     left: 0;
     width: 100%;
     height: 100%;
+    min-height: 99vh;
+    overflow: hidden;
 }
 
 #central-container .active-Id{
@@ -237,15 +244,19 @@ figure img {
     transition: opacity .3s;
     -webkit-transition: opacity .3s;
 }
+.about .circle {
+    width: 50px;
+    height: 50px;
+}
 .circle:hover {
     opacity: 0.6;
 }
 .play{
     width: 0;
     height: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 20px solid #AE2129;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 30px solid #AE2129;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -255,12 +266,16 @@ figure img {
     -o-transform: translate(-30%, -50%);
     transform: translate(-30%, -50%);
 }
-
+.about .play {
+      border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #AE2129;  
+}
 
 .player-holder{
     position: absolute;
     bottom: 7vh;
-    padding-left: 60px;
+    padding-left: 5%;
     display: inline-block;
     width: 95%;
     left: 0;
@@ -307,13 +322,14 @@ figure img {
     width: 130px;
 }
 .about .counter {
-    padding-left: 60px;
     display: inline-block;
     vertical-align: middle;
+    height: 40px;
 }
 .about .play-first {
     display: inline-block;
     vertical-align: middle;
+    
 }
 .currIndex{
     color: #333333;
@@ -786,7 +802,7 @@ canvas{
     margin-bottom: 5px;
     display: inline-block;
     width: 100%;
-    /* padding-left: 5%; */
+    padding-left: 5%;
 }
 
 .audio-files p{
