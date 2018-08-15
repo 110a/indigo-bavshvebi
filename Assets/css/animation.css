@@ -12,7 +12,7 @@
 .Id3.ids.active-Id,
 .Id7.ids.active-Id,
 .Id9.ids.active-Id {
-  animation: fontbulger 2s infinite;
+  animation: fontbulger 3s infinite;
   animation-delay: 1s;
 }
 .Id2.ids.active-Id,
@@ -20,7 +20,7 @@
 .Id6.ids.active-Id,
 .Id8.ids.active-Id,
 .Id10.ids.active-Id {
-  animation: second 2s infinite;
+  animation: second 3s infinite;
   animation-delay: 1s;
 }
 @keyframes fontbulger {
