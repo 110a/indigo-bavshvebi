@@ -631,22 +631,22 @@ canvas{
 }
 
 .read-article .arrow-right{
-    width: 100px;
+    width: 70px;
     height: 10px;
     background: url("../Images/Capture.PNG") no-repeat center;
-    background-size: 80%;
+    background-size: 70%;
 }
 
 .read-article p,
 .read-article span{
     display: inline-block;
     vertical-align: middle;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .read-article p{
     color: #333333;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .extra-content{
@@ -685,7 +685,7 @@ canvas{
 }
 
 .playlistButton span{
-    width: 0px;
+    width: 30px;
     height: 5px;
     display: block;
     margin-bottom: 16px;
