@@ -218,6 +218,7 @@ figure img {
     display: inline-block;
     width: 95%;
     left: 0;
+    box-sizing: border-box;
 }
 
 #audio-title{
