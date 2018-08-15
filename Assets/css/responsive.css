@@ -49,14 +49,14 @@
   }
 }
 @media screen and (max-width: 705px) {
-  #audio-title{
+/*   #audio-title{
     bottom: 20vh;
-  }
+  } */
   .title{
     font-size: 2.75rem;
   }
   .subtitle{
-    font-size: 4rem !important;
+    font-size: 3.5rem !important;
   }
   .player-holder{
     position: absolute;
