@@ -99,6 +99,10 @@ $('.about .play-first').click(function () {
     $('#audio-title').css({display:"inline-block"});
     $('.about').css({display:"none"});
     $('.about-project ').removeClass('active-title');
+    audio.src='Assets/Audio/1.mp3';
+    $('.ids').removeClass('active-Id');
+    $('.id1').addClass('active-Id');
+    $('.currIndex').html("00");
     startFunction();
 });
 

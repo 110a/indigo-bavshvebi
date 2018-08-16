@@ -35,7 +35,12 @@ function playList() {
         // for(var j =0; j<name.length; j++) {
         //     name = name.replace("%20", " ");
         // }
-        $('.audio-files ul').append("<li class='for-nav'><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+" <span>0"+([i+1])+"</span></p></li>");
+        if(i+1>=10){
+            $('.audio-files ul').append("<li class='for-nav'><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+" <span>"+([i+1])+"</span></p></li>");
+        }
+        else {
+            $('.audio-files ul').append("<li class='for-nav'><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+" <span>0"+([i+1])+"</span></p></li>");
+        }
     }
 }
 
@@ -58,6 +63,8 @@ $('.about-project').click(function () {
     $('.control').removeClass('pause');
     $('.control').addClass('play-pause');
     $('.currIndex').html("00");
+    $('.audio-files').fadeToggle();
+    $('.playlistButton').toggleClass('active');
 });
 
 // function parseTitles(){
@@ -75,6 +82,8 @@ $('.playlistButton').click(function () {
 });
 
 $('.audio-files ul li.for-nav p').click(function () {
+    $('.audio-files').fadeToggle();
+    $('.playlistButton').toggleClass('active');
 
     $('.control').removeClass('play-pause');
     $('.control').addClass('pause');
