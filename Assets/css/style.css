@@ -53,6 +53,11 @@ body{
     width: 100px;
     margin-left: 5%;
 }
+
+.about{
+    display: none;
+}
+
 .about-title {
     font-size: 60px;
     font-weight: normal;
@@ -224,8 +229,8 @@ figure img {
     -ms-transition: opacity 1000ms;
     -o-transition: opacity 1000ms;
     transition: opacity 1000ms;
-    z-index: 1000;
 }
+
 .circle{
     width: 80px;
     height: 80px;
