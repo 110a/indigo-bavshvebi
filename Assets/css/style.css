@@ -754,10 +754,14 @@ canvas{
     margin-top: 20px;
     width: 40px;
     position: relative;
+    transition: opacity .3s;
 }
-
+.share-social:hover {
+    opacity: 0.6;
+}
 .share-social .fb-share-button{
     opacity: 0.001;
+    margin-top: 2px;
 }
 
 .share-social img{
