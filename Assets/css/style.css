@@ -60,9 +60,10 @@ body{
 }
 
 .about-title {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: normal;
     margin-top: 60px;
+    
 }
 .indigo-team {
     margin-top: 60px;
@@ -87,10 +88,12 @@ body{
   font-family: 'bpg-nino-medium-condenced';
   font-size: 18px;
   font-weight: normal;
+  color: #3b4960;
 }
 .capital {
    font-size: 36px; 
    font-weight: normal;
+   color: #3b4960;
 }
 ul li{
     display: inline-block;
@@ -331,7 +334,7 @@ figure img {
 .about .counter {
     display: inline-block;
     vertical-align: middle;
-    height: 40px;
+    height: 36px;
 }
 .about .play-first {
     display: inline-block;
