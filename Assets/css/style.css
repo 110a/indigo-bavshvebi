@@ -53,8 +53,13 @@ body{
     width: 100px;
     margin-left: 5%;
     margin-top: 20px;
+    position: relative;
+    z-index: 100;
+    transition: opacity .3s;
 }
-
+.logo-indigo:hover {
+    opacity: 0.6;
+}
 .about{
     display: none;
 }
@@ -63,10 +68,10 @@ body{
     font-size: 50px;
     font-weight: normal;
     margin-top: 60px;
-    
 }
 .indigo-team {
     margin-top: 60px;
+        color: #3b4960;
 }
 .content {
     min-height: 80vh;
@@ -88,12 +93,10 @@ body{
   font-family: 'bpg-nino-medium-condenced';
   font-size: 18px;
   font-weight: normal;
-  color: #3b4960;
 }
 .capital {
    font-size: 36px; 
    font-weight: normal;
-   color: #3b4960;
 }
 ul li{
     display: inline-block;
@@ -334,7 +337,7 @@ figure img {
 .about .counter {
     display: inline-block;
     vertical-align: middle;
-    height: 36px;
+    height: 40px;
 }
 .about .play-first {
     display: inline-block;

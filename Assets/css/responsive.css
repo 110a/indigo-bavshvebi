@@ -52,7 +52,7 @@
 /*   #audio-title{
     bottom: 20vh;
   } */
-  .title{
+  .title, .about-title {
     font-size: 2.75rem;
   }
   .subtitle{
