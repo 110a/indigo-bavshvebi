@@ -19,7 +19,8 @@
     font-size: 25px;
   }
   #my-svg, .loader-img {
-    width: 65%;
+    width: 70%;
+    top: 45%;
   }
   #audio-title{
     bottom: 24vh;
@@ -103,6 +104,16 @@
       width: 100%;
       padding: 15px 100px 15px 0px;
     }
+    .left-image {
+    width: 28%;
+    top: 38%;
+    right: 10%;
+}
+.right-image {
+    width: 18%;
+    left: 20%;
+    top: 34%;
+}
   }
   @media screen and (max-width: 440px) {
     .counter{
