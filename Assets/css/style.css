@@ -833,13 +833,13 @@ canvas{
     content: "";
     width: 14px;
     height: 16px;
-    vertical-align: middle;
+    vertical-align: top;
+    margin-top: 13px;
     margin-left: 8px;
     display: inline-block;
     opacity: 0;
     background-image: url(../Images/SVG/play-blue.svg);
     transition: opacity .9s;
-    margin-top: 0px;
 }
 .audio-files p:hover{
     opacity: 0.6;
